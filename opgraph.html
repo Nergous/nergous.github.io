@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Микроразметка Open Graph: что это и как настроить</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span
+                        >Микроразметка Open Graph: что это и как настроить</span
+                    >
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable"
+                            >
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable pf-m-current pf-m-expanded">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <section
+                                        class="pf-v5-c-nav__subnav"
+                                        aria-labelledby="expandable-example1"
+                                    >
+                                        <ul
+                                            class="pf-v5-c-nav__list"
+                                            role="list"
+                                        >
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#start"
+                                                    class="pf-v5-c-nav__link  pf-m-current"
+                                                    >Протокол Open Graph от Facebook</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#why"
+                                                    class="pf-v5-c-nav__link"
+                                                    >Зачем нужен Open Graph</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#keytags"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Ключевые Мета-Теги Open Graph</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#twit"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Open Graph в Twitter</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#example"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Пример микроразметки страницы с помощью Open Graph</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#plugins"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Сервисы для работы и плагины Open Graph</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Протокол Open Graph от Facebook*
+                        </h1>
+                        <p>
+                            Open Graph — это стандарт микроразметки для
+                            формирования текстово-графического анонса, который
+                            отображается при добавлении ссылки на сайт в
+                            социальную сеть. С его помощью можно настроить
+                            изображение, которое должно появляться в превью,
+                            заголовок, описание и ссылку. Open Graph разработала
+                            компания Facebook*, но теперь он работает во многих
+                            популярных соцсетях и мессенджерах: ВКонтакте,
+                            Twitter, Pinterest, Одноклассниках, Telegram, Viber
+                            и других.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="why">
+                            Зачем нужен Open Graph
+                        </h1>
+
+                        <p>
+                            Если микроразметка не настроена, в превью может
+                            попасть что-то, чего там быть не должно — рекламный
+                            баннер, который был на странице, или какой-то
+                            фрагмент текста, не описывающий основной контент.
+                        </p>
+
+                        <figure>
+                            <img src="img/6.jpg" />
+                            <figcaption>
+                                Неправильное отображение сниппета
+                            </figcaption>
+                        </figure>
+
+                        <p>
+                            Можно отредактировать превью вручную, но это будет
+                            делать разве что администратор корпоративного
+                            аккаунта. Пользователи, которые делятся ссылками в
+                            личных целях, привыкли к тому, что по умолчанию их
+                            ссылки выглядят хорошо — за это и отвечает Open
+                            Graph.
+                        </p>
+
+                        <p>Что еще дает микроразметка:</p>
+
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                В сообщении или посте будут отображаться
+                                заголовок и изображение, релевантные содержанию
+                                страницы, а не какой-то случайных кусок
+                                информации с нее.
+                            </li>
+                            <li>
+                                Заголовок виден полностью, а размер изображения
+                                соответствует стандарту соцсети и не выглядит
+                                чужеродно.
+                            </li>
+                            <li>
+                                Сниппет будет выглядеть как самостоятельный
+                                пост, а не как ссылка, к которой нужны
+                                дополнительное описание и картинка.
+                            </li>
+                            <li>
+                                Оформленное превью улучшает поведенческие
+                                факторы и приносит больше кликов.
+                            </li>
+                        </ul>
+
+                        <p>
+                            В дополнение к микроразметке для соцсетей есть смысл
+                            добавить так называемые социальные кнопки —
+                            «Поделиться», «Like» и другие. Обычно их делают в
+                            блогах, чтобы пользователям было удобно делиться
+                            статьями. Это избавляет от необходимости копировать
+                            и вставлять ссылки и ускоряет распространение
+                            контента.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="keytags">
+                            Ключевые Мета-Теги Open Graph
+                        </h1>
+
+                        <p>
+                            Протокол Open Graph состоит из og: мета-тегов, их
+                            интегрируют в html-код страницы в &lt;head>.
+                        </p>
+
+                        <p>Разберем основные теги:</p>
+
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>og:title — название материала;</li>
+                            <li>
+                                og:description — описание материала, заполнять
+                                не обязательно;
+                            </li>
+                            <li>
+                                og:image — ссылка на картинку, которая должна
+                                сопровождать материал;
+                            </li>
+                            <li>
+                                og:type — тип добавляемого материала, например,
+                                «article» – статья, «movie» — кино и так далее;
+                            </li>
+                            <li>
+                                og:url — ссылка на саму веб-страницу, которая
+                                добавляется в социальную сеть.
+                            </li>
+                        </ul>
+
+                        <p>Вот пример кода:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">html</span>>
+    &lt;<span class="html__fx">head</span>>
+        &lt;<span class="html__fx">title</span>>Заголовок страницы&lt;/title>
+                
+        &lt;<span class="html__fx">meta</span> property="og:type" content="website">
+        &lt;<span class="html__fx">meta</span> property="og:url" content="https://mysite.com/page123">
+        &lt;<span class="html__fx">meta</span> property="og:title" content="Заголовок">
+        &lt;<span class="html__fx">meta</span> property="og:description" content="Описание">
+        &lt;<span class="html__fx">meta</span> property="og:image" content="https://mysite.com/image.jpg">
+    &lt;<span class="html__fx">/head</span>>
+    &lt;<span class="html__fx">body</span>>
+            
+    &lt;<span class="html__fx">/body</span>>
+&lt;<span class="html__fx">/html</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <figure>
+                            <img src="img/7.jpg" />
+                            <figcaption>
+                                Пример рецепта с разметкой Open Graph
+                            </figcaption>
+                        </figure>
+
+                        <p>
+                            Есть и дополнительные теги для разметки музыки и
+                            видео, они перечислены на странице
+                            <a href="https://ogp.me/" target="_blank">ogp.me</a
+                            >. Но такого разнообразия, как в Schema.org, которую
+                            используют для формирования сниппетов в выдаче, нет.
+                            Если нужно передать информацию, например, о
+                            человеке, придется использовать те же теги:
+                            og:title, og:description и og:image. Пример:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">meta</span> property="og:type" content="profile">
+&lt;<span class="html__fx">meta</span> property="og:title" content="Имя">
+&lt;<span class="html__fx">meta</span> property="og:description" content="Короткое описание или биография">
+&lt;<span class="html__fx">meta</span> property="og:image" content="URL профильного изображения">
+&lt;<span class="html__fx">meta</span> property="og:url" content="URL страницы профиля">`
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="twit">
+                            Open Graph в Twitter
+                        </h1>
+
+                        <p>
+                            Страница, размеченная тегами Open Graph, будет
+                            корректно отображаться в Twitter, но там есть
+                            собственный набор мета-тегов — Twitter Cards. Они
+                            очень похожи на теги Open Graph, но начинаются с
+                            twitter: вместо og:. Их можно использовать вместе с
+                            тегами Open Graph или отдельно. Если на странице
+                            есть оба типа тегов, Twitter отдаст предпочтение
+                            «своим». Если нет, прочитает Open Graph.
+                        </p>
+
+                        <p>
+                            В обратную сторону это не работает — другие
+                            социальные сети Twitter Cards читать не умеют.
+                        </p>
+
+                        <p>Пример микроразметки для Twitter:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+
+&lt;<span class="html__fx">html</span>>
+    &lt;<span class="html__fx">head</span>>
+        &lt;<span class="html__fx">title</span>>Заголовок страницы&lt;<span class="html__fx">/title</span>>  
+        &lt;<span class="html__fx">meta</span> property="twitter:card" content="summary_large_image">
+        &lt;<span class="html__fx">meta</span> property="twitter:url" content="https://mysite.com/page123">
+        &lt;<span class="html__fx">meta</span> property="twitter:title" content="Заголовок">
+        &lt;<span class="html__fx">meta</span> property="twitter:description" content="Описание">
+        &lt;<span class="html__fx">meta</span> property="twitter:image" content="https://mysite.com/image.jpg">
+    &lt;<span class="html__fx">/head</span>>
+    
+    &lt;<span class="html__fx">body</span>>
+
+    &lt;<span class="html__fx">/body</span>>
+&lt;<span class="html__fx">/html</span>>
+          
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="example">
+                            Пример микроразметки страницы с помощью Open Graph
+                        </h1>
+
+                        <p>
+                            Пример практического использования протокола Open
+                            Graph — фрагмент html-кода, в котором использованы
+                            необходимые теги данной разметки. Подопытная
+                            страница —
+                            <a
+                                href="https://pr-cy.ru/news/p/10116-rasshirennyy-snippet-v-google--chto-eto-i-kak-sdelat"
+                                >статья про расширенный сниппет в блоге PR-CY</a
+                            >. Вот часть кода с разметкой:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+
+&lt;<span class="html__fx">link</span> rel="canonical" href="https://pr-cy.ru/news/p/10116-rasshirennyy-snippet-v-google--chto-eto-i-kak-sdelat" />
+&lt;<span class="html__fx">meta</span> property="og:title" content="Расширенный сниппет в Google — что это и как сделать">
+&lt;<span class="html__fx">meta</span> property="og:image" content="https://cover.pr-cy.io/api/og?title=Расширенный сниппет в Google — что это и как сделать&bgImage=https://s3-eu-central-1.amazonaws.com/news.pr-cy.ru/284604/10116.png&category=Знания">
+&lt;<span class="html__fx">meta</span> property="og:type" content="article">
+&lt;<span class="html__fx">meta</span> property="og:url" content="https://pr-cy.ru/news/p/10116-rasshirennyy-snippet-v-google--chto-eto-i-kak-sdelat">
+&lt;<span class="html__fx">meta</span> property="og:description" content="Все самое важное о расширенных сниппетах. Исследования и советы, которые помогут привлечь больше пользователей из выдачи Google. " />
+&lt;<span class="html__fx">meta</span> name="description" content="Все самое важное о расширенных сниппетах. Исследования и советы, которые помогут привлечь больше пользователей из выдачи Google. " />
+          
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <img src="img/8.jpg" />
+
+                        <p>Разберем подробнее:</p>
+
+                        <ol class="pf-v5-c-list" role="list">
+                            <li>
+                                &lt;meta property="og:title"
+                                content="Расширенный сниппет в Google — что это
+                                и как сделать" /> — название страницы, которое
+                                будет отображаться в превью при публикации в
+                                соцсетях;
+                            </li>
+
+                            <li>
+                                &lt;meta property="og:image" content=... > —
+                                ссылка на изображение;
+                            </li>
+                            <li>
+                                &lt;meta property="og:type" content="article" >
+                                — тип контента. В этом примере — статья;
+                            </li>
+                            <li>
+                                &lt;meta property="og:url" content="https:=""
+                                pr-cy.ru="" news="" p=""
+                                10116-rasshirennyy-snippet-v-google--chto-eto-i-kak-sdelat&lt;=""
+                                a>"=""> — URL страницы;
+                            </li>
+                            <li>описание контента страницы.</li>
+                        </ol>
+
+                        <p>
+                            Отдельно можно настроить отображение для Twitter.
+                            Тогда в код нужно добавить теги:
+                        </p>
+
+                        <ol class="pf-v5-c-list" role="list">
+                            <li>
+                                &lt;meta property="twitter:card"
+                                content="summary_large_image" / > — тип Тwitter
+                                Card, в этом случае — 'summary_large_image'. Это
+                                значит, что в превью ссылки будет большая
+                                картинка, а под ней — заголовок и описание.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:url" content="..." >
+                                — URL страницы.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:title" content="..."
+                                > -— заголовок.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:description"
+                                content="..." > — описание контента.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:image" content="..."
+                                > — ссылка на изображение.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:image:width"
+                                content="800" / > и — размер изображения. Эти
+                                теги опициональные, но позволяют Twitter быстро
+                                определить размеры изображения.
+                            </li>
+                            <li>
+                                &lt;meta property="twitter:site"
+                                content="prcyru" / > — учетная запись владельца
+                                сайта в Twitter.
+                            </li>
+                        </ol>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="plugins">
+                            Сервисы для работы и плагины Open Graph
+                        </h1>
+
+                        <p>
+                            Для работы с Open Graph есть много сервисов — для
+                            автоматического создания кода для конкретной
+                            страницы, плагины в CMS и сервисы для проверки
+                            правильности заполнения.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl" >
+                            1. Составить код разметки Open Graph автоматически
+                        </h1>
+
+                        <p>
+                            Автоматически сделать код можно через
+                            <a
+                                href="https://pr-cy.ru/tools/open-graph-generator/"
+                                target="_blank"
+                                >Генератор мета-тегов Open Graph</a
+                            >. Заполните поля ссылками и нужным текстом и
+                            скопируйте готовый код для вставки на сайт.
+                        </p>
+
+                        <img src="img/9.jpg" />
+
+                        <p>
+                            Можно добавить дополнительную информацию — название
+                            сайта, язык страницы, видео с YouTube, Facebook* ID.
+                            И добавить метаданные статьи — автора, время
+                            публикации, категорию, теги.
+                        </p>
+
+                        <img src="img/10.jpg" />
+
+                        <p>
+                            Если нужна микроразметка для Твиттера, можно
+                            добавить теги и для него.
+                        </p>
+
+                        <p>
+                            В результате вы получите код, который нужно добавить
+                            на страницу.
+                        </p>
+
+                        <img src="img/11.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            2. Генератор изображений Open Graph
+                        </h1>
+
+                        <p>
+                            Это еще один бесплатный инструмент PR-CY, который
+                            позволяет
+                            <a
+                                href="https://pr-cy.ru/tools/og-image-generator/?1"
+                                >генерировать изображения</a
+                            >
+                            с заголовком, описанием и лого прямо на них.
+                        </p>
+
+                        <img src="img/12.jpg" />
+
+                        <p>
+                            Чтобы сгенерировать картинку, нужно добавить ссылки
+                            на фоновое изображение и лого, написать заголовок и
+                            описание.
+                        </p>
+
+                        <img src="img/13.jpg" />
+
+                        <p>
+                            Инструмент сразу покажет, что получилось, и
+                            сформирует код для добавления на страницу.
+                        </p>
+
+                        <img src="img/14.jpg" />
+
+                        <p>
+                            Можно автоматизировать процесс. Инструмент работает
+                            через API pr-cy.io. То есть каждая сгенерированная
+                            ссылка на изображение — это запрос к API.
+                        </p>
+
+                        <p>
+                            Чтобы сделать новое изображение, нужно добавить к
+                            базовому URL параметры, которые определяют, как оно
+                            будет выглядеть. Каждый параметр нужно записать в
+                            URL после знака вопроса и разделить амперсандом (&).
+                        </p>
+
+                        <p>
+                            Так будет выглядеть URL с заголовком (title),
+                            категорией (category) и цветом текста (color):
+                        </p>
+
+                        <p>
+                            <em
+                                >https://cover.pr-cy.io/api/og?title=Заголовок&category=Категория&color=000000</em
+                            >
+                        </p>
+
+                        <p>
+                            Этот URL можно добавить на страницу с помощью любого
+                            плагина, который позволяет вставлять произвольные
+                            мета-теги.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            3. Сервис проверки Open Graph
+                        </h1>
+
+                        <p>
+                            Контролировать разметку страницы Open Graph можно
+                            через специальный сервис, разработанный Facebook*. С
+                            его помощью веб-мастер узнает, как социальная сеть
+                            будет отображать анонс внешней страницы, и сможет
+                            отредактировать мета-тег для лучшего отображения
+                            превью в социальных медиа.
+                        </p>
+
+                        <img src="img/15.jpg" />
+
+                        <p>
+                            Наличие разметки определяет инструмент для
+                            автоматического аудита конкретной страницы
+                            <a
+                                href="https://pr-cy.ru/tools/content-analysis/"
+                                target="_blank"
+                                >«Анализ контента»</a
+                            >. Если нужно быстро проверить, работает ли
+                            разметка, а также оценить контент, юзабилити,
+                            технические характеристики и мобильность страницы по
+                            многим параметрам, попробуйте сервис.
+                        </p>
+
+                        <img src="img/16.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            4. Парсер для поиска микроразметки
+                        </h1>
+
+                        <p>
+                            Посмотреть, как конкуренты составили микроразметку,
+                            можно с помощью
+                            <a
+                                href="https://pr-cy.ru/tools/open-graph-parser/"
+                                target="_blank"
+                                >парсера мета-тегов</a
+                            >
+                            Open Graph. Он проанализирует страницу на наличие
+                            Open Graph тегов:
+                        </p>
+
+                        <img src="img/17.jpg" />
+
+                        <p>
+                            Для популярных CMS есть плагины — это сильно
+                            упрощает работу, потому что владельцу сайта нужно
+                            только добавить нужную информацию о страницах:
+                        </p>
+
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                <a
+                                    href="https://wordpress.org/plugins/opengraph/"
+                                    >«Open Graph»</a
+                                >
+                                или
+                                <a
+                                    href="https://ru.wordpress.org/plugins/wordpress-seo/"
+                                    >«Yoast SEO»</a
+                                >
+                                для Wordpress;
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://extensions.joomla.org/extension/site-management/seo-a-metadata/phoca-open-graph/"
+                                    >«Phoca Open Graph»</a
+                                >
+                                для Joomla;
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=12874"
+                                    >«Open Graph Meta»</a
+                                >
+                                для Opencart.
+                            </li>
+                        </ul>
+
+                        <p>
+                            <em
+                                >*Компания Meta, которой принадлежит Instagram и
+                                Facebook, признана в России экстремистской
+                                организацией.</em
+                            >
+                        </p>
+
+                        <!------------------------button------------------------------->
+                        <div class="pf-v5-c-back-to-top">
+                            <a
+                                class="pf-v5-c-button pf-m-primary"
+                                href="#start"
+                            >
+                                Back to top
+                                <span class="pf-v5-c-button__icon pf-m-end">
+                                    <i
+                                        class="fas fa-angle-up"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

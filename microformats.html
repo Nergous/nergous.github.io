@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Микроразметка Microformats: что это и как настроить</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span
+                        >Микроразметка Microformats: что это и как
+                        настроить</span
+                    >
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" >
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-current pf-m-expanded"
+                            >
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <section
+                                        class="pf-v5-c-nav__subnav"
+                                        aria-labelledby="expandable-example1"
+                                    >
+                                        <ul
+                                            class="pf-v5-c-nav__list"
+                                            
+                                        >
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#start"
+                                                    class="pf-v5-c-nav__link pf-m-current"
+                                                    >Что такое микроразметка
+                                                    Microformats и зачем она
+                                                    нужна</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#support"
+                                                    class="pf-v5-c-nav__link"
+                                                    >Поддержка микроформатов</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#ways"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Способы разметки
+                                                    микроформатов</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#hCard"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Микроформат hCard</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#hRecipe"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Микроформат hRecipe</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#hReview"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Микроформат hReview</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#hProduct"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Микроформат hProduct</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#valid"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Валидатор микроразметки</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Что такое микроразметка Microformats и зачем она
+                            нужна
+                        </h1>
+
+                        <p>
+                            Микроформаты — это формат микроразметки, похожий на
+                            schema.org, который позволяет структурировать данные
+                            на сайте для поисковых роботов. С её помощью
+                            поисковые роботы понимают, что за текст и
+                            изображения установлены в блоке на сайте и их
+                            предназначение.
+                        </p>
+
+                        <p>
+                            Принцип работы микроразметки заключается в наделении
+                            существующих HTML атрибутов (в большинстве —
+                            классов) дополнительным смыслом, не прибегая к
+                            разметке с помощью дополнительных свойств, ранее
+                            неизвестных стандартам HTML.
+                        </p>
+
+                        <p>
+                            Разработкой микроформатов занималась инициативная
+                            группа с 2007 г., в которую входил руководитель по
+                            продуктам Google, поэтому большинство микроформатов
+                            успешно перетекло в schema.org, которой Google
+                            занимается по настоящее время.
+                        </p>
+
+                        <p>
+                            Популярность микроформатов на данный момент стала
+                            очень низкой из-за schema.org, которая внедряется
+                            намного проще (с помощью дополнительных свойств) и
+                            поддерживает большее количество свойств и объектов.
+                        </p>
+
+                        <p>
+                            Микроформаты, как и любая микроразметка, внедряются
+                            на уровне HTML кода.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl" id="why">
+                            Зачем нужно использовать микроформаты
+                        </h1>
+
+                        <p>
+                            Микроформаты используются для показа расширенного
+                            сниппета в поисковых системах.
+                        </p>
+                        <p>
+                            Сама структура данных микроформатов нужна для SEO
+                            оптимизации. Результат после ее добавления вы можете
+                            не увидеть, но в выдаче поисковой системы сайт будет
+                            выглядеть лучше, что напрямую влияет на поведение
+                            пользователей.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="support">
+                            Поддержка микроформатов
+                        </h1>
+
+                        <p>
+                            В настоящее время поисковыми системами
+                            поддерживаются микроформаты:
+                        </p>
+
+                        <ul class="pf-v5-c-list">
+                            <li>
+                                hCard — формат разметки информации о компании,
+                                её контактных данных;
+                            </li>
+                            <li>
+                                hRecipe — формат для описания кулинарных
+                                рецептов;
+                            </li>
+                            <li>
+                                hReview — формат разметки отзывов (Яндекс не
+                                поддерживает);
+                            </li>
+                            <li>
+                                hProduct — формат разметки товаров (Яндекс не
+                                поддерживает).
+                            </li>
+                        </ul>
+
+                        <p>
+                            Google поддерживает все микроформаты, но с учетом
+                            соответствия стандартам schema.org. В списке
+                            отсутствуют более сырые/неактуальные микроформаты:
+                            hAtom, hCalendar, hListing, hMedia, hResume. Все
+                            микроформаты можно увидеть на
+                            <a
+                                href="https://microformats.org/wiki/Main_Page#Classic_Microformats"
+                                >официальном сайте</a
+                            >.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="ways">
+                            Способы разметки микроформатов
+                        </h1>
+
+                        <p>
+                            Стоит отметить, что все микроформаты подчиняются
+                            общему синтаксису, поэтому каждое значение свойства
+                            можно разметить по-разному. Например, название
+                            товара в hProduct можно разметить способами:
+                        </p>
+
+                        <ol class="pf-v5-c-list">
+                            <li>
+                                &lt;span class="fn">название товара&lt;/span>
+                            </li>
+                            <li>
+                                &lt;span class="fn">&lt;span class="value-title"
+                                title="реальное_название_товара">название товара
+                                видное пользователям&lt;/span>
+                            </li>
+                        </ol>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="hCard">
+                            Микроформат hCard
+                        </h1>
+
+                        <p>Пример разметки контактных данных:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+
+&lt;<span class="html__fx">div</span> class="vcard">
+&lt;<span class="html__fx">div</span>>
+    &lt;<span class="html__fx">span</span> class="category">Офис&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> class="fn org">Цифровой элемент&lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">div</span> class="adr">
+    &lt;<span class="html__fx">span</span> class="locality">г. Челябинск&lt;<span class="html__fx">/span</span>>,
+    &lt;<span class="html__fx">span</span> class="street-address">ул. Энтузиастов 2&lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">div</span>>Телефон: &lt;<span class="html__fx">span</span> class="tel">+7 (351) 225-64-27&lt;<span class="html__fx">/span</span>>&lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">div</span>>Мы работаем &lt;<span class="html__fx">span</span> class="workhours">ПН-ПТ с 09:00 до 18:00&lt;<span class="html__fx">/span</span>>&lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">Теги hCard</h1>
+
+                        <table
+                            class="pf-v5-c-table pf-m-grid-md"
+                            role="grid"
+                            aria-label="This is a simple table example"
+                            id="table-basic"
+                        >
+                            <thead class="pf-v5-c-table__thead">
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Тег
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Описание
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Пример
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="pf-v5-c-table__tbody" role="rowgroup">
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>vcard</code>*</td>
+                                    <td>
+                                        Свойство начала разметки контактных
+                                        данных организации
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"vcard"</span>&gt;</span
+                                            >...<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>category</code>
+                                    </td>
+                                    <td>
+                                        Категория пункта (офис, магазин, кафе,
+                                        ресторан и пр.) для отметки контакта.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"category"</span>&gt;</span
+                                            >Офис<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>fn</code>*</td>
+                                    <td>Название (полное).</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"fn"</span>&gt;</span
+                                            >ООО «Цифровой элемент<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>org</code>
+                                    </td>
+                                    <td>Название организации.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"org"</span>&gt;</span
+                                            >Цифровой элемент<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>adr</code>
+                                    </td>
+                                    <td>
+                                        Свойство начала разметки адреса
+                                        компании.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"adr"</span>&gt;</span
+                                            >…<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>country-name</code>
+                                    </td>
+                                    <td>Название страны.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"country-name"</span>&gt;</span
+                                            >Россия<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>region</code>
+                                    </td>
+                                    <td>Название области/округа.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"region"</span>&gt;</span
+                                            >Челябинская область<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>locality</code>
+                                    </td>
+                                    <td>Название города.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"locality"</span>&gt;</span
+                                            >Челябинск<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>street-address</code>
+                                    </td>
+                                    <td>
+                                        Название улицы + название дома, кв или
+                                        строения.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"street-address"</span>&gt;</span
+                                            >ул. Энтузиастов 2<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>tel</code>
+                                    </td>
+                                    <td>Телефон организации.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"tel"</span>&gt;</span
+                                            >+7 (351) 225-64-27<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>workhours</code>
+                                    </td>
+                                    <td>
+                                        Время работы (это свойство добавлено
+                                        Яндексом),
+                                        <a
+                                            href="https://microformats.org/wiki/operating-hours-formats"
+                                            rel="external"
+                                            target="_blank"
+                                            >подробнее на официальном сайте</a
+                                        >.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"workhours"</span>&gt;</span
+                                            >ПН-ПТ с 09:00 до 18:00<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>url</code>
+                                    </td>
+                                    <td>
+                                        Ссылка на домашнюю страницу для связи.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"url"</span>&gt;</span
+                                            >
+                                            https://d-element.ru<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>photo</code>
+                                    </td>
+                                    <td>Изображение, логотип.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"photo"</span>&gt;</span
+                                            ><span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>email</code>
+                                    </td>
+                                    <td>Электронная почта.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"email"</span>&gt;</span
+                                            ><span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            <em>* - обязательные свойства.</em>
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            Генерация разметки hCard
+                        </h1>
+
+                        <p>
+                            Для генерации разметки рецептов можно
+                            воспользоваться:
+                        </p>
+
+                        <ul class="pf-v5-c-list">
+                            <li>
+                                <a
+                                    href="https://microformats.org/code/hcard/creator"
+                                    >hCard Creator</a
+                                >
+                                — официальный онлайн сервис для генерации
+                                разметки;
+                            </li>
+                            <li>
+                                <a href="https://hcardcreator.com/"
+                                    >hcardcreator.com</a
+                                >
+                                — онлайн сервис генерации разметки;
+                            </li>
+                            <li>
+                                <a
+                                    href="https://wordpress.org/plugins/addressbook/"
+                                    >Wordpress plugin</a
+                                >
+                                — плагин CMS Wordpress для генерации hCard.
+                            </li>
+                        </ul>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="hRecipe">
+                            Микроформат hRecipe
+                        </h1>
+
+                        <p>Пример простой разметки рецепта:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> class="hrecipe">
+&lt;<span class="html__fx">h1</span> class="fn">Манка&lt;<span class="html__fx">/h1</span>>
+&lt;<span class="html__fx">h2</span>>Ингредиенты&lt;<span class="html__fx">/h2</span>>
+&lt;<span class="html__fx">ul</span>>
+    &lt;<span class="html__fx">li</span> class="ingredient">
+        &lt;<span class="html__fx">span</span> class="name">Молоко&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="amount">1&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="type">л&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/li</span>>
+    &lt;<span class="html__fx">li</span> class="ingredient">
+        &lt;<span class="html__fx">span</span> class="name">Манная крупа&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="value">0.5&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="type">л&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/li</span>>
+    &lt;<span class="html__fx">li </span>class="ingredient">
+        &lt;<span class="html__fx">span</span> class="name">соль&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/li</span>>
+    &lt;<span class="html__fx">li </span>class="ingredient">
+        &lt;<span class="html__fx">span</span> class="name">перец&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/li</span>>
+    &lt;<span class="html__fx">li </span>class="ingredient">
+        &lt;<span class="html__fx">span</span> class="name">специи&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="amount">по вкусу&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/li</span>>
+&lt;<span class="html__fx">/ul</span>>
+&lt;<span class="html__fx">h2</span>>Способ приготовления&lt;<span class="html__fx">/h2</span>>
+&lt;<span class="html__fx">ul</span> class="instructions">
+    &lt;<span class="html__fx">li</span> class="instruction">1. Поставить кастрюлю с водой, высыпать манную крупу в холодную воду, добавить молока, посолить, поперчить, добавить специи по вкусу.&lt;<span class="html__fx">/li</span>>
+    &lt;<span class="html__fx">li</span> class="instruction">2. Готовить на медленном огне, помешивать до полного приготовления в течение 20 минут.&lt;<span class="html__fx">/li</span>>
+&lt;<span class="html__fx">/ul</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">Теги hRecipe</h1>
+
+                        <table
+                            class="pf-v5-c-table pf-m-grid-md"
+                            role="grid"
+                            aria-label="This is a simple table example"
+                            id="table-basic"
+                        >
+                            <thead class="pf-v5-c-table__thead">
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Тег
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Описание
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Пример
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>hrecipe</code>*</td>
+                                    <td>Свойство начала разметки рецепта.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"hrecipe"</span>&gt;</span
+                                            >...<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>fn</code>*</td>
+                                    <td>Название блюда (рецепта).</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"fn"</span>&gt;</span
+                                            >Манка<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>category</code>**</td>
+                                    <td>Тип блюда. Текстовое значение.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"category"</span>&gt;</span
+                                            >Горячее блюдо<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>sub-category</code>**</td>
+                                    <td>Подтип блюда. Текстовое значение.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"sub-category"</span>&gt;</span
+                                            >Блюдо из птицы<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>photo</code>
+                                    </td>
+                                    <td>
+                                        Свойство photo может быть внутри общего
+                                        класса hrecipe, либо внутри
+                                        instructions.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>img</span>
+                                                <span>class</span>=<span
+                                                    >"photo"</span
+                                                >
+                                                <span>src</span>=<span
+                                                    >"ссылка на
+                                                    изображение"</span
+                                                >
+                                                /&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>result-photo</code>**</td>
+                                    <td>
+                                        Свойство result-photo не предусмотрено
+                                        стандартом hRecipe, оно добавлено
+                                        Яндексом в качестве расширения.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>img</span>
+                                                <span>class</span>=<span
+                                                    >"result-photo"</span
+                                                >
+                                                <span>src</span>=<span
+                                                    >"ссылка на
+                                                    изображение"</span
+                                                >&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>ingredient</code>*</td>
+                                    <td>
+                                        Свойство начала разметки ингредиентов.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"ingredient"</span>&gt;</span
+                                            >…<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>name</code>
+                                    </td>
+                                    <td>Название ингредиента.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"name"</span>&gt;</span
+                                            >Молоко<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>value</code>
+                                    </td>
+                                    <td>
+                                        Количество ингредиента. Рациональное
+                                        число. Используется только вместе с
+                                        type.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"value"</span>&gt;</span
+                                            >0.5<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>type</code>
+                                    </td>
+                                    <td>
+                                        Тип значения количества ингредиента.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"type"</span>&gt;</span
+                                            >л<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>amount</code>
+                                    </td>
+                                    <td>
+                                        Количество ингредиента в свободном
+                                        формате. Используется вместо type и
+                                        value.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"amount"</span>&gt;</span
+                                            >1<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                        или
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"amount"</span>&gt;</span
+                                            >по вкусу<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>author</code>
+                                    </td>
+                                    <td>Автор рецепта.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"author"</span>&gt;</span
+                                            >Матильда<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>servingSize</code>
+                                    </td>
+                                    <td>
+                                        Размер блюда для указаний свойств
+                                        nutrion (энергетической ценности),
+                                        обычно используют 100 г.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"servingSize"</span>&gt;</span
+                                            >100 г.<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>nutrition</code>
+                                    </td>
+                                    <td>
+                                        Свойство начала разметки энергетической
+                                        ценности блюда (рецепта).
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"nutrion"</span>&gt;</span
+                                            >…<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>calories</code>
+                                    </td>
+                                    <td>Калорийность.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"calories"</span>&gt;</span
+                                            >200 ккал<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>fat</code>
+                                    </td>
+                                    <td>Жиры.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"fat"</span>&gt;</span
+                                            >10 г.<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>saturatedFat</code>
+                                    </td>
+                                    <td>Насыщенные жиры.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>unsaturatedFat</code>
+                                    </td>
+                                    <td>Ненасыщенные жиры.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>carbohydrates</code>
+                                    </td>
+                                    <td>Углеводы.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>sugar</code>
+                                    </td>
+                                    <td>Сахар.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>fiber</code>
+                                    </td>
+                                    <td>Клетчатка.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>protein</code>
+                                    </td>
+                                    <td>Белки.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>cholesterol</code>
+                                    </td>
+                                    <td>Холестерин.</td>
+                                    <td>по примеру жиров</td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>duration</code>
+                                    </td>
+                                    <td>
+                                        Время приготовления. В формате
+                                        <a
+                                            href="https://en.wikipedia.org/wiki/ISO_8601"
+                                            target="_blank"
+                                            rel="external"
+                                            >ISO 8601</a
+                                        >.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"duration"</span>&gt;</span
+                                            >1 час<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>yield</code>
+                                    </td>
+                                    <td>Количество порций на человека.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>&gt;</span
+                                            >Блюдо рассчитано на
+                                            <span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"yield"</span>&gt;</span
+                                            >3
+                                            человек<span>&lt;/<span>span</span>&gt;</span>.<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>cuisine-type</code>**</td>
+                                    <td>
+                                        Национальная кухня, к которой относится
+                                        блюдо. Текстовое значение.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"cuisine-type"</span>&gt;</span
+                                            >Рецепт русской кухни<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>weight</code>**</td>
+                                    <td>Вес готового блюда.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"weight"</span>&gt;</span
+                                            >2,7 кг.<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            <em>* — обязательные свойства.</em>
+                            <br />
+                            <em
+                                >** — расширения от Яндекса, не предусмотренные
+                                в стандарте hRecipe.</em
+                            >
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            Генерация разметки hRecipe
+                        </h1>
+
+                        <p>
+                            Для генерации разметки рецептов можно
+                            воспользоваться:
+                        </p>
+                        <ul class="pf-v5-c-list">
+                            <li>
+                                <a href="http://recipeseo.com/" target="_blank"
+                                    >RecipeSEO</a
+                                >
+                                — онлайн сервис генерации разметки;
+                            </li>
+                            <li>
+                                <a
+                                    href="https://wordpress.org/plugins/hrecipe/"
+                                    target="_blank"
+                                    >Wordpress plugin</a
+                                >
+                                — плагин для CMS Wordpress;
+                            </li>
+                            <li>
+                                <a
+                                    href="https://chrome.google.com/webstore/detail/hrecipe-helper/cgpnljccbfcjhhekfnikhpllfjpjidlj"
+                                    >Расширение Google Chrome</a
+                                >
+                                — расширение для автоматического считывания и
+                                проверки размеченных данных.
+                            </li>
+                        </ul>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="hReview">
+                            Микроформат hReview
+                        </h1>
+
+                        <p>
+                            Пример простой разметки отзыва о товаре или услуге:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> class="hreview">
+    &lt;<span class="html__fx">h2</span> class="summary">&lt;<span class="html__fx">span</span> class="item fn">iPhone 10&lt;<span class="html__fx">/span</span>> просто супер&lt;<span class="html__fx">/h2</span>>
+    &lt;<span class="html__fx">div</span> class="item">
+       &lt;<span class="html__fx">img</span> src="ссылка_на_изображение_товара" class="photo" />
+       &lt;<span class="html__fx">span</span> class="fn">Название_товара&lt;<span class="html__fx">/span</span>>
+       &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="type">product&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">p</span> class="description">Лучший товар из всех, что я покупал!&lt;<span class="html__fx">/p</span>>
+    &lt;<span class="html__fx">div</span> class="reviewer">Автор отзыва:
+        &lt;<span class="html__fx">span</span> class="fn">Иванов Иван&lt;<span class="html__fx">/span</span>>,
+       &lt;<span class="html__fx">time</span> class="dtreviewed" datetime="2020-01-01">2020-01-01&lt;<span class="html__fx">/time</span>>
+       &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">a</span> href="ссылка_на_отзыв" class="permalink">ссылка_на_отзыв&lt;<span class="html__fx">/a</span>>
+ &lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <p>Пример простой разметки отзыва о ресторане:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+
+&lt;<span class="html__fx">div</span> class="hreview">
+    &lt;<span class="html__fx">h2</span> class="summary">&lt;<span class="html__fx">span</span> class="item fn">Цифровой элемент&lt;<span class="html__fx">/span</span>> просто класс!&lt;<span class="html__fx">/h2</span>>
+    &lt;<span class="html__fx">div</span>>Автор отзыва:
+        &lt;<span class="html__fx">span</span> class="reviewer fn">Иванов Иван&lt;<span class="html__fx">/span</span>>,
+        &lt;<span class="html__fx">time</span> class="dtreviewed" datetime="2020-01-01" title="2020-01-01">2020-01-01&lt;<span class="html__fx">/time</span>>
+    &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="type">business&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="description">Пользовались услугами рекламы, остались всем довольны, спасибо!&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="reviewer">
+    &lt;<span class="html__fx">span</span> class="fn">Аноним&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">a</span> href="ссылка_на_отзыв" class="permalink">ссылка_на_отзыв&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">Теги hReview</h1>
+
+                        <table
+                            class="pf-v5-c-table pf-m-grid-md"
+                            role="grid"
+                            aria-label="This is a simple table example"
+                            id="table-basic"
+                        >
+                            <thead class="pf-v5-c-table__thead">
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Тег
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Описание
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Пример
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>hreview</code>*</td>
+                                    <td>Свойство начала разметки отзыва.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"hreview"</span>&gt;</span
+                                            >...<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>summary</code>
+                                    </td>
+                                    <td>
+                                        Краткий синопсис, заголовок или название
+                                        отзыва.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>h2</span>
+                                                <span>class</span
+                                                >=<span>"summary"</span>&gt;</span
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span>=<span
+                                                    >"item fn"</span
+                                                >&gt;</span
+                                            >Молочная каша<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            >
+                                            просто супер<span
+                                                >&lt;/<span>h2</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>item</code>*</td>
+                                    <td>
+                                        Объект отзыва. То, о чем отзыв. Должно
+                                        иметь вложенное свойство fn.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"item"</span>&gt;</span
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"fn"</span>&gt;</span
+                                            >Цифровой элемент<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            ><span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>reviewer</code>*</td>
+                                    <td>
+                                        Автор отзыва. Должно иметь вложенное
+                                        свойство fn.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span>=<span
+                                                    >"reviewer fn"</span
+                                                >&gt;</span
+                                            >Иван Иванов<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>dtreviewed</code>*</td>
+                                    <td>
+                                        Дата написания отзыва в формате
+                                        <a
+                                            href="https://en.wikipedia.org/wiki/ISO_8601"
+                                            target="_blank"
+                                            rel="external"
+                                            >ISO 8601</a
+                                        >.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>time</span>
+                                                <span>class</span>=<span
+                                                    >"dtreviewed"</span
+                                                >
+                                                <span>datetime</span>=<span
+                                                    >"2020-01-01"</span
+                                                >
+                                                <span>title</span
+                                                >=<span>"2020-01-01"</span>&gt;</span
+                                            >01.01.2020<span
+                                                >&lt;/<span>time</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>rating</code>
+                                    </td>
+                                    <td>
+                                        Рейтинг отзыва с фиксированной точкой.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>&gt;</span
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"rating"</span>&gt;</span
+                                            >4.5<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            >
+                                            из 5<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>description</code>
+                                    </td>
+                                    <td>Полный текст отзыва.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"description"</span>&gt;</span
+                                            >Молочная каша просто супер, никогда
+                                            такую не пробовал!<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>permalink</code>
+                                    </td>
+                                    <td>
+                                        Ссылка на полный текст отзыва. Ссылка
+                                        должна быть уникальной и постоянной.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>a</span>
+                                                <span>href</span>=<span
+                                                    >"https://
+                                                    d-element.ru/about/reviews/"</span
+                                                >
+                                                <span>class</span
+                                                >=<span>"permalink"</span>&gt;</span
+                                            >ссылка_на_отзыв<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>type</code>*</td>
+                                    <td>
+                                        Предмет отзыва. То, о ком отзыв.
+                                        Возможные значения:
+                                        <ul>
+                                            <li>event</li>
+                                            <li>business</li>
+                                            <li>place</li>
+                                            <li>website</li>
+                                            <li>person</li>
+                                            <li>url</li>
+                                            <li>product</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"type"</span>&gt;</span
+                                            >event<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>* — обязательные свойства.</p>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            Генерация разметки hReview
+                        </h1>
+
+                        <p>
+                            Для генерации разметки отзывов можно
+                            воспользоваться:
+                        </p>
+
+                        <ul class="pf-v5-c-list" >
+                            <li>
+                                <a
+                                    href="https://microformats.org/code/hreview/creator"
+                                    >hReview creator</a
+                                >
+                                — официальный онлайн сервис генерации разметки;
+                            </li>
+                            <li>
+                                <a href="https://www.aes.id.au/?page_id=28"
+                                    >Wordpress plugin</a
+                                >
+                                — плагин для CMS Wordpress.
+                            </li>
+                        </ul>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="hProduct">
+                            Микроформат hProduct
+                        </h1>
+
+                        <p>Пример простой разметки товара или услуги:</p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> class="hproduct">
+    &lt;<span class="html__fx">div</span> class="brand">BMW&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="category">auto&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="price">1 990 000 руб.&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="description">Автомобиль BMW по выгодной цене! Успей купить!&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="fn">BMW X5 Sports&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span>>&lt;img class="photo" src="ссылка">&lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> class="identifier">
+        &lt;<span class="html__fx">span</span> class="type">SKU&lt;<span class="html__fx">/span</span>>
+        &lt;<span class="html__fx">span</span> class="value">1666&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">Теги hProduct</h1>
+
+                        <table
+                            class="pf-v5-c-table pf-m-grid-md"
+                            role="grid"
+                            aria-label="This is a simple table example"
+                            id="table-basic"
+                        >
+                            <thead class="pf-v5-c-table__thead">
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Тег
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Описание
+                                    </th>
+                                    <th
+                                        class="pf-v5-c-table__th"
+                                        role="columnheader"
+                                        scope="col"
+                                    >
+                                        Пример
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>hproduct</code>*</td>
+                                    <td>Свойство начала разметки продукта.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"hproduct"</span>&gt;</span
+                                            >...<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td><code>fn</code>*</td>
+                                    <td>
+                                        Название. Может выступать в роли
+                                        названия модели товара.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"fn"</span>&gt;</span
+                                            >Принтер HP laser 3200<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>availability</code>
+                                    </td>
+                                    <td>
+                                        Наличие. Может иметь значение:
+                                        <ul>
+                                            <li>
+                                                out of stock (нет в наличии)
+                                            </li>
+                                            <li>in stock (в наличии)</li>
+                                            <li>
+                                                instore only (только в магазине)
+                                            </li>
+                                            <li>preorder (под заказ)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"availability"</span>&gt;</span
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span>=<span
+                                                    >"title-value"</span
+                                                >
+                                                <span>title</span>=<span
+                                                    >"In stock"</span
+                                                >&gt;</span
+                                            >В наличии<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>price</code>
+                                    </td>
+                                    <td>Цена.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"price"</span>&gt;</span
+                                            >119 руб.<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>count</code>
+                                    </td>
+                                    <td>
+                                        Количество в наличии. Натуральное число.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"count"</span>&gt;</span
+                                            >50<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>identifier</code>
+                                    </td>
+                                    <td>
+                                        Идентификатор товара. Имеет обязательные
+                                        вложенные свойства <code>type</code> и
+                                        <code>value</code>. type может принимать
+                                        значение:
+                                        <ul>
+                                            <li>model</li>
+                                            <li>mpn</li>
+                                            <li>upc</li>
+                                            <li>isbn</li>
+                                            <li>issn</li>
+                                            <li>ean</li>
+                                            <li>jan</li>
+                                            <li>sn</li>
+                                            <li>vin</li>
+                                            <li>sku</li>
+                                        </ul>
+                                        <code>value</code> может содержать любое
+                                        обозначение в виде идентификатора.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"identifier"</span>&gt;</span
+                                            >
+                                            <span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"type"</span>&gt;</span
+                                            >SKU<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            >
+                                            <span
+                                                >&lt;<span>span</span>
+                                                <span>class</span
+                                                >=<span>"value"</span>&gt;</span
+                                            >12223f<span
+                                                >&lt;/<span>span</span>&gt;</span
+                                            >
+                                            <span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>photo</code>
+                                    </td>
+                                    <td>Изображение.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>img</span>
+                                                <span>class</span>=<span
+                                                    >"photo"</span
+                                                >
+                                                <span>src</span
+                                                >=<span>"ссылка"</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>url</code>
+                                    </td>
+                                    <td>
+                                        Ссылка на товар такого же типа на
+                                        веб-сайте.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>a</span>
+                                                <span>href</span>=<span
+                                                    >"ссылка"</span
+                                                >
+                                                <span>class</span
+                                                >=<span>"url"</span>&gt;</span
+                                            >ссылка<span
+                                                >&lt;/<span>a</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>review</code>
+                                    </td>
+                                    <td>
+                                        Отзывы о товаре. Используется как объект
+                                        начала разметки отзывов. Для разметки
+                                        обратитесь к микроформату hReview.
+                                        <a
+                                            href="http://microformats.org/wiki/hreview-aggregate"
+                                            target="_blank"
+                                            rel="external"
+                                            >Подробнее на официальном сайте</a
+                                        >.
+                                    </td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span>=<span
+                                                    >"review
+                                                    hreview-aggregate"</span
+                                                >&gt;</span
+                                            >…<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>brand</code>
+                                    </td>
+                                    <td>Бренд.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"brand"</span>&gt;</span
+                                            >BMW<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="pf-v5-c-table__tr" role="row">
+                                    <td>
+                                        <code>category</code>
+                                    </td>
+                                    <td>Категория.</td>
+                                    <td>
+                                        <code
+                                            ><span
+                                                >&lt;<span>div</span>
+                                                <span>class</span
+                                                >=<span>"category"</span>&gt;</span
+                                            >Авто<span
+                                                >&lt;/<span>div</span>&gt;</span
+                                            ></code
+                                        >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            <em>* - обязательные свойства.</em>
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="valid">
+                            Валидатор микроразметки
+                        </h1>
+
+                        <p>Проверить установку микроразметки можно через:</p>
+                        <ul class="pf-v5-c-list" >
+                            <li>
+                                <a
+                                    href="https://webmaster.yandex.ru/tools/microtest/"
+                                    target="_blank"
+                                    >Проверка через валидатор Яндекс</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://hcard.geekhood.net/"
+                                    target="_blank"
+                                    >Проверка hCard</a
+                                >
+                            </li>
+                        </ul>
+
+                        <!------------------------button------------------------------->
+                        <div class="pf-v5-c-back-to-top">
+                            <a
+                                class="pf-v5-c-button pf-m-primary"
+                                href="#start"
+                            >
+                                Back to top
+                                <span class="pf-v5-c-button__icon pf-m-end">
+                                    <i
+                                        class="fas fa-angle-up"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Синтаксис микроразметки</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span>Синтаксис</span>
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-current pf-m-expanded"
+                            >
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <section
+                                        class="pf-v5-c-nav__subnav"
+                                        aria-labelledby="expandable-example1"
+                                    >
+                                        <ul
+                                            class="pf-v5-c-nav__list"
+                                            role="list"
+                                        >
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#start"
+                                                    class="pf-v5-c-nav__link  pf-m-current"
+                                                    >Что такое синтаксис</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#microdata"
+                                                    class="pf-v5-c-nav__link"
+                                                    >1. Microdata (Микроданные)</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#microformats"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >2. Microformats.org (Микроформаты)</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#rdfa"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >3. RDFa</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#jsonld"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >4. JSON-LD</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Что такое синтаксис
+                        </h1>
+                        <p>
+                            Синтаксис — это способ использования такого языка,
+                            т.е. словаря. Он определяет, с помощью каких тегов и
+                            как будут указываться сущности и их свойства,
+                            например, на веб-страницах.
+                        </p>
+                        <img src="img/18.png" alt="" />
+                        <p>
+                            Стандартов синтаксиса, как и словарей, несколько. В
+                            этой статье мы и разберем на практических примерах
+                            наиболее распространенные:
+                        </p>
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                Microdata — Микроданные (словарь Schema.org чаще
+                                всего встречается именно в этом синтаксисе);
+                            </li>
+                            <li>
+                                Microformats.org — Микроформаты (напоминаем, что
+                                это объединенный стандарт синтаксиса и словаря);
+                            </li>
+                            <li>
+                                RDFa и RDFa Lite (в упрощенном виде RDFa
+                                рекомендуется создателями словаря Open Graph.
+                                Также встречается с другими словарями, например,
+                                со словарем Dublin Core или Data Vocabulary);
+                            </li>
+                            <li>JSON-LD — расширение JSON.</li>
+                        </ul>
+                        <p>
+                            Чтобы понять, почему для решения одной задачи было
+                            разработано много разных стандартов, обратимся к
+                            истории развития синтаксиса:
+                        </p>
+
+                        <p>
+                            В 2004 году разработчики из W3C создали стандарт,
+                            который, по их мнению, подходил для «представления
+                            всего в мире». Так появился синтаксис RDFa (Resourse
+                            Description Framework in attributes), который
+                            позволяет однозначно транслировать HTML-разметку с
+                            семантическими данными в RDF.
+                        </p>
+                        <p>
+                            Примерно через год несколько энтузиастов решили
+                            придумать свой «простой» стандарт, в котором
+                            использовались бы уже существующие элементы HTML. И
+                            придумали всем известные Микроформаты.
+                        </p>
+                        <figure>
+                            <img src="img/19.png" alt="" />
+                            <figcaption>
+                                <strong
+                                    ><em
+                                        >(Далее по тексту вместо этой картинки
+                                        будет стоять звездочка — она слишком
+                                        часто отражает суть происходящего)</em
+                                    ></strong
+                                >
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Чуть позже Ян «Хикси» Хиксон, сотрудник Google и на
+                            тот момент участник W3C, решил написать
+                            альтернативную версию HTML5 и создать свой
+                            синтаксис. Появились Микроданные — простой, но не
+                            совместимый с RDF стандарт. W3C сообщество
+                            отреагировало неоднозначно на эту инициативу, и в
+                            итоге Хикси ушел из W3C и к тому же основал свое
+                            альтернативное сообщество WHATWG. *
+                        </p>
+                        <p>
+                            Microdata стал первым синтаксисом, в котором
+                            рекомендовали использовать словарь Schema.org. Когда
+                            в W3C возник вопрос о том, почему Микроданные, а не
+                            RDFa, один из основателей Schema.org Ramanathan V.
+                            Guha или просто Guha (тоже сотрудник Google и даже
+                            Google Fellow) ответил письмом примерно следующего
+                            содержания: «Ваш RDFa настолько сложен, что в 90%
+                            случаях его использования допускаются ошибки». В
+                            ответ на письмо разработчики RDFa довольно быстро
+                            выпустили RDFa lite — синтаксис не сложнее
+                            Микроданных, но совместимый с RDF и расширяемый до
+                            RDFa.*
+                        </p>
+                        <p>
+                            А позже Manu Sporny, один из создателей RDFa,
+                            столкнулся с необходимостью в передаче
+                            структурированной информации из JSON в RDF, когда
+                            работал над своим проектом, где было много данных в
+                            JSON. Он и его коллеги осознали, что нужно придумать
+                            что-то вроде RDFa для JSON.*
+                        </p>
+                        <p>
+                            И в результате долгой и упорной работы был выпущен
+                            синтаксис JSON-LD (JavaScript Object Notation for
+                            Linked Data), который не только решил первоначальную
+                            задачу, но и реализовал идею по распространению
+                            Linked Data. В мире семантики появился синтаксис,
+                            который в отличие от всех остальных, разработан для
+                            внедрения в тег и использования в сервисных API.
+                        </p>
+                        <p>
+                            В общем, каждый синтаксис представляет собой набор
+                            атрибутов и правил по их использованию. В одном
+                            синтаксисе можно использовать и комбинировать
+                            различные словари (за исключением микроформатов). Но
+                            у всех стандартов есть свои особенности, которые мы
+                            и разберем далее в статье.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="microdata">
+                            1. MICRODATA (МИКРОДАННЫЕ)
+                        </h1>
+                        <p>
+                            Ключевые элементы микроданных — это атрибуты
+                            itemscope, itemtype и itemprop, указывающие на
+                            сущности и их свойства.
+                        </p>
+                        <p>
+                            Пример, размеченный в синтаксисе микроданных с
+                            использованием словаря Schema.org:
+                        </p>
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Person">
+    &lt;<span class="html__fx">span</span> itemprop="name">Юрий Гагарин&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">img</span> src="gagarin.jpg" itemprop="image"/>
+    &lt;<span class="html__fx">span</span> itemprop="jobTitle">Летчик-космонавт&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="colleague">Валентина Терешкова&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">link</span> itemprop="nationality" href="http://ru.wikipedia.org/wiki/Россия">Россия
+    &lt;<span class="html__fx">time</span> itemprop="birthDate" datetime="1934-03-09">9 марта 1934&lt;<span class="html__fx">/time</span>>
+    &lt;<span class="html__fx">span</span> itemprop="memberOf">Военно-воздушные силы СССР&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="knows">Сергей Королев&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">time</span> itemprop="deathDate" datetime="1968-03-27">27 марта 1968&lt;<span class="html__fx">/time</span>>
+    &lt;<span class="html__fx">span</span> itemprop="award">Герой Советского союза&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">a</span> href="http://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич" itemprop="sameAs">Страница на Википедии&lt;<span class="html__fx">/a</span>>
+    &lt;<span class="html__fx">a</span> href="http://example.com/Гагарин" itemprop="url">Сайт Юрия Гагарина&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                itemscope указывает парсеру на то, что в
+                                HTML-блоке ... содержатся данные об объекте.
+                                Часто уточняют, нужно ли указывать значение
+                                артибута itemscope — в соответствии со
+                                спецификацией HTML5 значение для логических
+                                атрибутов задавать не обязательно, достаточно
+                                просто указать название атрибута;
+                            </li>
+                            <li>
+                                itemtype с помощью ссылки schema.org/Person
+                                указывает на конкретный тип объекта;
+                            </li>
+                            <li>
+                                itemprop указывает на свойства этого объекта.
+                            </li>
+                        </ul>
+
+                        <p>
+                            В этом примере с помощью link itemprop объект
+                            описывается с помощью невидимых ссылок.
+                        </p>
+                        <p>
+                            На странице можно размечать несколько сущностей с
+                            одинаковым типом (itemtype), и внутри одной сущности
+                            может быть несколько одинаковых полей (itemprop).
+                            Если вы делаете разметку для конкретного
+                            потребителя, то могут встретиться дополнительные
+                            условия.
+                        </p>
+                        <p>
+                            Есть еще одна особенность микроданных, с которой мы
+                            столкнулись в работе — это часто и внезапно
+                            меняющаяся спецификация. По истории этой
+                            документации можно отследить, что раньше она
+                            обновлялась как минимум ежегодно, а то и по
+                            несколько раз в год.
+                        </p>
+                        <p>
+                            Обычно все инициативные группы выступают за разметку
+                            видимого пользователям содержания. Но в некоторых
+                            случаях нужно описать данные так, чтобы на сайте
+                            отображался человекочитаемый текст, а парсер получал
+                            данные в машиночитаемом формате. В таком случае
+                            скрыть данные необходимо, и для этого можно
+                            использовать тег meta:
+                        </p>
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Offer">
+    &lt;<span class="html__fx">span</span> itemprop="name">Чехол для Iphone&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="price">700 рублей&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">div</span> itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        &lt;<span class="html__fx">img</span> src="four-stars.jpg" />
+        &lt;<span class="html__fx">meta</span> itemprop="ratingValue" content="4" />
+        &lt;<span class="html__fx">meta</span> itemprop="bestRating" content="5" />
+        Основан на &lt;<span class="html__fx">span</span> itemprop="ratingCount">25&lt;<span class="html__fx">/span</span>> голосах пользователей
+    &lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <p>
+                            В синтаксисе микроданных возможно описывать
+                            вложенные сущности
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Person">
+    &lt;<span class="html__fx">span</span> itemprop="name">Юрий Гагарин&lt;<span class="html__fx">/span</span>>, 
+    &lt;<span class="html__fx">span</span> itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    &lt;<span class="html__fx">span</span> itemprop="addressLocality">Байконур&lt;<span class="html__fx">/span</span>>, 
+    &lt;<span class="html__fx">span</span> itemprop="addressCountry">Казахстан&lt;<span class="html__fx">/span</span>>, 
+    &lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <p>
+                            В этом примере свойство "address" также являются
+                            сущностью и обладает своими свойствами
+                            "addressLocality" и "addressCountry".
+                        </p>
+                        <p>
+                            Microdata все больше набирает популярность из-за
+                            доступности внедрения, предусмотренных возможностей
+                            и отчасти благодаря стандарту Schema.org. Также
+                            рекомендуется вместе со словарем Schema.org
+                            поисковыми системами, например, Яндексом и Google.
+                        </p>
+                        <p>Полезные ссылки:</p>
+                        <p>
+                            Описание микроданных в W3C; <br />Статья о Microdata
+                            в блоге об HTML5; <br />Документация в WHATWG.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="microformats">
+                            2. Microformats.org (Микроформаты)
+                        </h1>
+                        <p>
+                            Микроформаты — это инициатива энтузиастов из W3C,
+                            которые хотели сделать простой стандарт
+                            семантической разметки и для этого использовали
+                            базовые элементы HTML. Стандарт Microformats.org —
+                            один из старейших, был запущен в 2005 году.
+                        </p>
+                        <p>
+                            Особенность микроформатов — это применение тегов
+                            (обычно или ) c атрибутами class, rel, rev или title
+                            для передачи семантической информации. Для
+                            обозначения сущностей и их свойств используются
+                            только уже существующие атрибуты и не вводятся
+                            новые.
+                        </p>
+                        <p>
+                            Например, добавив class="adr" мы указали, что в этой
+                            строчке описан адрес:
+                        </p>
+                        <div class="pf-v5-c-clipboard-copy">
+                            <div class="pf-v5-c-clipboard-copy__group">
+                                <span
+                                    class="pf-v5-c-form-control pf-m-readonly"
+                                >
+                                    <input
+                                        readonly
+                                        type="text"
+                                        value='&lt;div class="adr"> Москва, ул. Льва Толстого, 16&lt;/div>'
+                                        id="basic-readonly-text-input"
+                                        aria-label="Copyable input"
+                                    />
+                                </span>
+                                <button
+                                    class="pf-v5-c-button pf-m-control"
+                                    type="button"
+                                    aria-label="Copy to clipboard"
+                                    id="basic-readonly-copy-button"
+                                    aria-labelledby="basic-readonly-copy-button basic-readonly-text-input"
+                                >
+                                    <i
+                                        class="fas fa-copy"
+                                        aria-hidden="true"
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p>
+                            В этом примере HTML-элементу был добавлен атрибут
+                            class, значение которого представляет собой имя
+                            свойства, предусмотренного микроформатом.
+                        </p>
+                        <p>
+                            Пример небольшого HTML-блока, размеченного
+                            микроформатом hCard (с помощью этого микроформаты
+                            описывается человек или организация, в нашем случае
+                            — человек).
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> class="vcard">
+    &lt;<span class="html__fx">img</span> class="photo" src="http://example.com/gagarin.jpg" />
+    &lt;<span class="html__fx">strong</span> class="fn">Юрий Гагарин&lt;<span class="html__fx">/strong</span>>
+    &lt;<span class="html__fx">span</span> class="title">Летчик-космонавт&lt;<span class="html__fx">/span</span>> 
+    &lt;<span class="html__fx">span</span> class="org">Военно-воздушные силы СССР&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">a</span> class="url" href=http://example.com/Гагарин>Страница Ю.Гагарина&lt;<span class="html__fx">/a</span>>
+    &lt;<span class="html__fx">div</span> class="bday"> 
+        &lt;<span class="html__fx">span</span> class="value-title" title="1934-03-09">9 марта 1934&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">span</span> class="note">Первый человек в космосе&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> class="adr">
+    &lt;<span class="html__fx">span</span> class="type">work&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> class="locality">Байконур&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> class="country-name">Казахстан&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> class="postal-code">468320&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <p>
+                            В первой строке class="vcard" указывает, что
+                            HTML-код в тегах описывает человека; для описания
+                            используются такие свойства, как фотография, имя,
+                            должность, адрес страницы, день рождения и заметка;
+                            в каждом элементе, содержащем эти данные, добавлен
+                            атрибут class и указано конкретное свойство,
+                            предусмотренное микроформатом; свойство "адрес"
+                            содержит вложенные свойства: "тип", "город",
+                            "страна", "почтовый индекс"
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="rdfa">
+                            3. RDFa
+                        </h1>
+                        <p>
+                            В 2004 году данный синтаксис разработали специалисты
+                            из W3C (World Wide Web Consortium) для
+                            структурирования данных на сайтах. Все данные
+                            размечаются в HTML-коде. В наше время синтаксис RDFa
+                            почти не используется из-за сложности реализации.
+                            Поэтому представители Google вскоре начали отдавать
+                            предпочтение синтаксису Microdata для словаря
+                            Schema.org.
+                        </p>
+
+                        <p>
+                            На данный момент RDFa чаще всего используется в
+                            словаре Open Graph. Пример разметки статьи
+                            синтаксисом RDFa:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> vocab="http://schema.org/" typeof="Article">
+    &lt;<span class="html__fx">span</span> property="name">RDFa&lt;<span class="html__fx">/span</span>>
+    by &lt;<span class="html__fx">span</span> property="author">SEO-специлист&lt;<span class="html__fx">/span</span>>
+    Эту статью твитнули 20 раз и откомментировало 10 человек
+    &lt;<span class="html__fx">div</span> property="interactionStatistic" typeof="InteractionCounter">
+        &lt;<span class="html__fx">div</span> property="interactionService" itemscope itemid="http://www.twitter.com" 
+        itemtype="http://schema.org/Website">
+            &lt;<span class="html__fx">meta</span> property="name" content="Twitter" />
+        &lt;<span class="html__fx">/div</span>>
+        &lt;<span class="html__fx">meta</span> property="interactionType" content="http://schema.org/ShareAction"/>
+        &lt;<span class="html__fx">meta</span> property="userInteractionCount" content="20" />
+    &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">div</span> property="interactionStatistic" typeof="InteractionCounter">
+        &lt;<span class="html__fx">meta</span> property="interactionType" content="http://schema.org/CommentAction"/>
+    &lt;<span class="html__fx">/div</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="jsonld">
+                            4. JSON-LD
+                        </h1>
+
+                        <p>
+                            Самый молодой и актуальный формат. Первый черновик
+                            этого синтаксиса появился в 2010 году. Основное
+                            отличие от остальных — JSON-LD внедряется не в код
+                            страницы, а в тег &lt;script>. JSON-LD представляет
+                            из себя набор пар “ключ-значение”, который очень
+                            легко понимает не только поисковый бот, но и сам
+                            человек. Например, нам необходимо разметить статью
+                            при помощи JSON-LD
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;script type="application/ld+json">
+    "{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "author": "SEO-специалист",
+    "interactionStatistic": [
+    {
+    "@type": "InteractionCounter",
+    "interactionService": {
+    "@type": "Website",
+            "name": "Twitter",
+            "url": "http://www.twitter.com"
+          },
+          "interactionType": "http://schema.org/ShareAction",
+          "userInteractionCount": "20"
+        },
+        {   
+          "@type": "InteractionCounter",
+          "interactionType": "http://schema.org/CommentAction",
+          "userInteractionCount": "10"
+        }
+      ],
+      "name": "JSON-LD"
+    }"
+&lt;/script>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <p>Рассмотрим чуть подробней:</p>
+
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                @context, @type, author, interactionStatistic,
+                                interactionService, name, url, interactionType,
+                                userInteractionCount — ключи;
+                            </li>
+                            <li>
+                                SEO-специалист, Twitter, http://www.twitter.com,
+                                20, 10 — значения.
+                            </li>
+                        </ul>
+
+                        <p>
+                            С 2013 года JSON-LD рекомендует Schema.org и с 2014
+                            года Google также рекомендует переходить на данный
+                            синтаксис. Для упрощения работы можно использовать
+                            онлайн генератор микроразметки —
+                            <a
+                                href="https://technicalseo.com/tools/schema-markup-generator/"
+                                target="_blank"
+                                >Schema Markup Generator (JSON-LD)</a
+                            >
+                        </p>
+
+                        <div class="pf-v5-c-back-to-top">
+                            <a
+                                class="pf-v5-c-button pf-m-primary"
+                                href="#start"
+                            >
+                                Back to top
+                                <span class="pf-v5-c-button__icon pf-m-end">
+                                    <i
+                                        class="fas fa-angle-up"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

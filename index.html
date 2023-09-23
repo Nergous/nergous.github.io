@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Использование микроразметки</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span>Использование микроразметки</span>
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html"
+                            ><i class="fas fa-home"></i
+                        ></a>
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-current"
+                            >
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Что такое микроразметка
+                        </h1>
+                        <p>
+                            Микроразметка — это разметка данных на странице и на
+                            сайте, которая используется для того, чтобы
+                            поисковый бот лучше распознавал контент на вашем
+                            сайте. Микроразметка данных — универсальная. Ее
+                            понимают все поисковые системы — Google, Yandex,
+                            Yahoo и другие. Перед тем, как внедрить
+                            микроразметку на сайт, необходимо определить тип
+                            ваших данных. Например, на карточке товара для
+                            интернет-магазина необходимо разметить цену товара,
+                            его наименование, описание, изображение, отзывы,
+                            рейтинг. Так поисковый бот без каких-либо проблем
+                            сможет понять, что именно размещено на странице и
+                            сделает ее более релевантной.
+                        </p>
+                        <figure>
+                            <img src="img/1.png" alt="" />
+                            <figcaption>
+                                <strong
+                                    ><em
+                                        >Микроразметка на сайте
+                                        интернет-магазина помогает поисковой
+                                        системе понять, где фото товара, а где
+                                        его цена, и сформировать красивый
+                                        сниппет.</em
+                                    ></strong
+                                >
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Сама микроразметка напрямую не влияет на позиции
+                            сайта в поиске, но косвенно помогает привлекать
+                            трафик и повышает кликабельность. Красивые
+                            информативные сниппеты побуждают активнее
+                            взаимодействовать с сайтом, улучшаются поведенческие
+                            факторы, а следовательно, и ранжирование.
+                        </p>
+                        <p>
+                            Для ещё более наглядного представления, взглянем на
+                            две картинки:
+                        </p>
+
+                        <figure>
+                            <img src="img/2.png" alt="" />
+                            <figcaption>
+                                <strong><em>С микроразметкой</em></strong>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/3.png" alt="" />
+                            <figcaption>
+                                <strong><em>Без микроразметки</em></strong>
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Довольно очевидно, что пользователь выберет именно
+                            первую ссылку, так как на ней, благодаря
+                            микроразметке, видна часть нужной нам информации.
+                        </p>
+                        <p>
+                            По данным Google, некоторые бренды после добавления
+                            микроразметки на страницы сайтов смогли повысить CTR
+                            на 25-35%.
+                        </p>
+                        <figure>
+                            <img src="img/4.png" alt="" />
+                            <figcaption>
+                                <strong
+                                    ><em
+                                        >Сайт с рецептами, имеющий
+                                        микроразметку, может попасть в отдельный
+                                        блок. У сайтов с расширенными сниппетами
+                                        больше шансов привлечь внимание
+                                        пользователя и получить трафик</em
+                                    ></strong
+                                >
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="pf-v5-c-back-to-top">
+                        <a class="pf-v5-c-button pf-m-primary" href="#start">
+                            Back to top
+                            <span class="pf-v5-c-button__icon pf-m-end">
+                                <i
+                                    class="fas fa-angle-up"
+                                    aria-hidden="true"
+                                ></i>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

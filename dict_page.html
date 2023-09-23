@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Словари</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span>Словари</span>
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded pf-m-current"
+                            >
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                                <section
+                                    class="pf-v5-c-nav__subnav"
+                                    aria-labelledby="expandable-example1"
+                                >
+                                    <ul class="pf-v5-c-nav__list" role="list">
+                                        <li class="pf-v5-c-nav__item">
+                                            <a
+                                                href="#start"
+                                                class="pf-v5-c-nav__link pf-m-current"
+                                                >Что такое словари</a
+                                            >
+                                        </li>
+                                        <li class="pf-v5-c-nav__item">
+                                            <a
+                                                href="#popular"
+                                                class="pf-v5-c-nav__link"
+                                                >Наиболее распространенные
+                                                словари</a
+                                            >
+                                        </li>
+                                        <li class="pf-v5-c-nav__item">
+                                            <a
+                                                href="#opgraph"
+                                                class="pf-v5-c-nav__link"
+                                                >Open Graph</a
+                                            >
+                                        </li>
+                                        <li class="pf-v5-c-nav__item">
+                                            <a
+                                                href="#schemaorg"
+                                                class="pf-v5-c-nav__link"
+                                                >Schema.org</a
+                                            >
+                                        </li>
+                                        <li class="pf-v5-c-nav__item">
+                                            <a
+                                                href="#microformats"
+                                                class="pf-v5-c-nav__link"
+                                                >Microformats</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </section>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Что такое словари
+                        </h1>
+                        <p >
+                            Словарь — это своеобразный «язык», набор классов и
+                            их свойств, с помощью которых указывается суть
+                            содержимого на странице. Например, словарь
+                            определяет, с помощью какого термина указывать
+                            название — «name», «title» или «n».
+                        </p>
+                        <p>
+                            Семантическая разметка развивалась поэтапно, в свое
+                            время разные инициативные группы брались за
+                            разработку концепции. И в итоге получился винегрет
+                            из разных словарей и синтаксисов — их довольно много
+                            и сначала разобраться со всеми ними далеко непросто.
+                        </p>
+                        <p>
+                            Сама микроразметка напрямую не влияет на позиции
+                            сайта в поиске, но косвенно помогает привлекать
+                            трафик и повышает кликабельность. Красивые
+                            информативные сниппеты побуждают активнее
+                            взаимодействовать с сайтом, улучшаются поведенческие
+                            факторы, а следовательно, и ранжирование.
+                        </p>
+
+                        <figure id="scroll">
+                            <img src="img/5.png" alt="" />
+                            <figcaption>
+                                <strong
+                                    ><em
+                                        >Типы словарей в семантической
+                                        разметке.</em
+                                    ></strong
+                                >
+                            </figcaption>
+                        </figure>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="popular">
+                            Наиболее распространенные словари
+                        </h1>
+                        <div class="dicts__list">
+                            <div class="list__item">
+                                <div class="item__inner">
+                                    <div class="item__img">
+                                        <img src="img/oppng.png" />
+                                    </div>
+                                    <div class="item__text">
+                                        <a class="item__href" href="#opgraph"
+                                            >Open Graph</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__item">
+                                <div class="item__inner">
+                                    <div class="item__img">
+                                        <img src="img/sorg.jpg" />
+                                    </div>
+                                    <div class="item__text">
+                                        <a class="item__href" href="#schemaorg"
+                                            >Schema.org</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__item">
+                                <div class="item__inner">
+                                    <div class="item__img">
+                                        <img src="img/microforms.png" />
+                                    </div>
+                                    <div class="item__text">
+                                        <a
+                                            class="item__href"
+                                            href="#microformats"
+                                            >Microformats</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/stat.png" alt="" />
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="opgraph">
+                            Open Graph
+                        </h1>
+                        <p>
+                            Open Graph (OG) — это самый распространенный и
+                            простой словарь. Сейчас Open Graph чаще всего
+                            используют для того, чтобы публикуемые ссылки с
+                            сайтов были расширенными, красивыми и понятными. С
+                            разметкой OG ссылки будут так показываться по всех
+                            популярных соцсетях.
+                        </p>
+                        <p>
+                            Также разметка Open Graph активно используется
+                            приложениями для Facebook* (продукт запрещенной в РФ
+                            компании Meta) — она позволяет пользователям
+                            отражать действия из приложений на своих страничках.
+                        </p>
+                        <p>
+                            Благодаря OG можно смотреть видео, читать краткое
+                            описание статьи и быстрее понимать суть информации,
+                            которой делятся друзья, просматривая бесконечные
+                            ленты новостей. Помимо Facebook разметку Open Graph
+                            распознают также Вконтакте, Google+, Pinterest и
+                            другие.
+                        </p>
+                        <p>
+                            Сам словарь достаточно лёгок в применении — для
+                            начала использования нужно 4 свойства:
+                        </p>
+                        <div class="pf-v5-c-accordion pf-m-bordered">
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >og:title</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="true"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >og:type</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content pf-m-expanded"
+                                hidden
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    Тип объекта, например, «video.movie»(кино).
+                                    В зависимости от типа можно указать еще
+                                    другие свойства.
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >og:image</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >og:url</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+                        </div>
+                        <!--ACCORDION-->
+                        <p>
+                            Например, разметка Open Graph для описания человека
+                            выглядит так:
+                        </p>
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">html</span> prefix="og: http://ogp.me/ns# 
+          profile: http://ogp.me/ns/profile#">
+    &lt;<span class="html__fx">head</span>>
+        &lt;<span class="html__fx">meta</span> property="og:title" content="Юрий Гагарин" />
+        &lt;<span class="html__fx">meta</span> property="og:type" content="profile" />
+        &lt;<span class="html__fx">meta</span> property="og:url" content="http://example.com/Гагарин" />
+        &lt;<span class="html__fx">meta</span> property="og:image" content="http://example.com/" />
+        &lt;<span class="html__fx">meta</span> property="profile:first_name" content="Юрий" />
+        &lt;<span class="html__fx">meta</span> property="profile:last_name" content="Гагарин" />
+        &lt;<span class="html__fx">meta</span> property="profile:gender" content="male" />
+        ...
+    &lt;<span class="html__fx">/head</span>>
+    ...
+&lt;<span class="html__fx">/html</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <!--CODE BLOCK-->
+
+                        <p>
+                            Здесь робот распознает, что страница посвящена
+                            мужчине по имени Юрий Гагарин, на ней есть ссылка на
+                            его фото. Здесь такое свойство как url указывается
+                            как канонический URL страницы.
+                        </p>
+                        <p>
+                            В теге og:type помимо типа «profile» могут быть
+                            указаны различные типы сущностей (у которых есть еще
+                            свои свойства):
+                        </p>
+
+                        <div class="pf-v5-c-accordion pf-m-bordered">
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >Music (подтипы music.song, music.album,
+                                    music.playlist, music.radio_station)</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden=""
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text">
+                                    Video (video.movie, video.episode,
+                                    video.tv_show, video.other)
+                                </span>
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    У фильмов могут быть указаны актеры и их
+                                    роли, режиссеры, сценаристы,
+                                    продолжительность.
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >og:image</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden=""
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+
+                            <button
+                                class="pf-v5-c-accordion__toggle"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span class="pf-v5-c-accordion__toggle-text"
+                                    >No vertical (article. book, profile,
+                                    website)</span
+                                >
+
+                                <span class="pf-v5-c-accordion__toggle-icon">
+                                    <i
+                                        class="fas fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </button>
+
+                            <div
+                                class="pf-v5-c-accordion__expandable-content"
+                                hidden=""
+                            >
+                                <div
+                                    class="pf-v5-c-accordion__expandable-content-body"
+                                >
+                                    This text is hidden
+                                </div>
+                            </div>
+                        </div>
+                        <!--ACCORDION-->
+                        <p>
+                            Если не использовать такую разметку на странице
+                            сайта, то при публикации ссылки в Facebook система в
+                            любом случае попробует построить превью. Но, как
+                            правило, это выходит далеко не так удачно — вместо
+                            картинки к статье может отражаться логотип с сайта,
+                            заголовок может быть заменен названием какой-нибудь
+                            категории сайта и в краткое описание статьи попадет
+                            текст из истории компании, который не будет отражать
+                            суть статьи (и вряд ли порадует пользователя).
+                        </p>
+                        <p><a href="#">Узнать больше об Open Graph</a></p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="schemaorg">
+                            Schema.org
+                        </h1>
+                        <p>
+                            Schema.org — это словарь, который появился по
+                            инициативе поисковых систем в 2011 году. Его
+                            поддерживают Яндекс, Google, Bing и Yahoo!
+                        </p>
+                        <p>
+                            В Schema.org также представлены наборы классов,
+                            описывающих различные сущности и их свойства. Но
+                            если в OG и Microformats.org такие классы
+                            исчисляются десятками, в Schema.org их уже несколько
+                            сотен. Все классы имеют свое место в древовидной
+                            иерархии.
+                        </p>
+                        <p>
+                            Это живой и гибкий словарь. Новые сущности активно
+                            обсуждаются перед добавлением: для этого участники
+                            инициативной группы еженедельно встречаются и
+                            обсуждают внедрение, расширение и использование
+                            схем.
+                        </p>
+                        <p>
+                            Наиболее обобщенный тип сущности — это Thing, у
+                            которого есть подтипы. Рассмотрим несколько из них:
+                        </p>
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                Action — описывает действие, которое может
+                                выполнятся кем-то определенным (человеком или
+                                организацией). У этого действия может
+                                дополнительно быть указано место, объект и
+                                инструменты, с помощью которых оно было
+                                совершено. Как у любого действия, у него может
+                                быть результат, участники и период времени, в
+                                течение которого оно совершалось.
+                            </li>
+                            <li>
+                                CreativeWork — описывает особенности творческих
+                                работ. Видео, картинки, рецепты, диеты — все
+                                может быть описано с помощью этого типа. У всех
+                                творческих работ можно указать автора, жанр,
+                                краткое описание, а также отзывы, аудиторию,
+                                упоминания и многое другое.
+                            </li>
+                            <li>
+                                Event — как у любого мероприятия, здесь можно
+                                описать место проведения, дату, участников,
+                                выступающих и т.д.
+                            </li>
+                            <li>
+                                Product — это все, что продается и покупается.
+                                Некоторые платные сервисные услуги (как,
+                                например, стрижка) тоже могут быть описаны типом
+                                Product. У продукта может быть указан рейтинг,
+                                бренд, цвет, аудитория, цена, модель и т.д.
+                            </li>
+                            <li>
+                                Person — как указано в документации Schema.org,
+                                это может быть человек — живой, вымышленный или
+                                уже умерший, — а также «undead» (видимо,
+                                создателям нужно было описать еще зомби и не
+                                нашлось более подходящего типа). У людей могут
+                                быть указаны контактные данные, информация о
+                                работе, семье, отношениях и многое другое.
+                            </li>
+                        </ul>
+                        <p>
+                            Также предусматривается возможность расширять
+                            словарь по инициативе пользователей и вебмастеров.
+                        </p>
+                        <p>
+                            Существует публичная рассылка на английском языке
+                            public-vocabs@w3.org, созданная для обсуждения общих
+                            вопросов, предложений и сообщений об ошибках, куда
+                            также можно написать письмо с вопросом о разметке,
+                            если у вас не получается что-то внедрить. Есть
+                            механизм расширения, а также с мая 2011 года можно
+                            использовать списки на внешних ресурсах для указания
+                            различных свойств.
+                        </p>
+                        <p>Пример разметки Schema.org для типа Person:</p>
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Person">
+    &lt;<span class="html__fx">span</span> itemprop="name">Юрий Гагарин&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">img</span> src="gagarin.jpg" itemprop="image"/>
+    &lt;<span class="html__fx">span</span> itemprop="jobTitle">Летчик-космонавт&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="colleague">Валентина Терешкова&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">link</span> itemprop="nationality"href="http://ru.wikipedia.org/wiki/Россия">Россия
+    &lt;<span class="html__fx">time</span> itemprop="birthDate" datetime="1934-03-09">9 марта 1934&lt;<span class="html__fx">/time</span>>
+    &lt;<span class="html__fx">span</span> itemprop="memberOf">Военно-воздушные силы СССР&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="knows">Сергей Королев&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">time</span> itemprop="deathDate" datetime="1968-03-27">27 марта 1968&lt;<span class="html__fx">/time</span>>
+    &lt;<span class="html__fx">span</span> itemprop="award">Герой Советского союза&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">a</span> href="http://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич" itemprop="sameAs">Страница на Википедии&lt;<span class="html__fx">/a</span>>
+    &lt;<span class="html__fx">a</span> href="http://example.com/Гагарин" itemprop="url">Сайт Юрия Гагарина&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <p>
+                            В такой разметке поисковая система распознает, что
+                            человек по имени Юрий Гагарин является
+                            летчиком-космонавтом и является коллегой Валентины
+                            Терешковой. Также указано много других данных: его
+                            награда, национальность, дата смерти, знакомства и
+                            другие — некоторые из этих свойств можно указать
+                            только с помощью словаря Schema.org. Здесь есть две
+                            ссылки, размеченные с помощью свойств «sameAs» и
+                            «url», где в первом случае указывается страница с
+                            достоверной информацией о человеке, а во втором —
+                            ссылка на личный сайт.
+                        </p>
+                        <p>
+                            Хочется еще раз отметить, что Schema.org — это
+                            инициатива поисковиков. И развитие словаря будет
+                            зависеть от создания продуктов поисковыми системами
+                            для сайтов. Поэтому не стоит воспринимать этот
+                            словарь как попытку привести к единой онтологии все
+                            существующее на свете. Все существующее в интернете
+                            — возможно. Но если это будет нужно поисковым
+                            системам.
+                        </p>
+                        <p>
+                            А в создании большого количества продуктов для
+                            сайтов на основе Schema.org, в том числе для
+                            русскоязычных, поисковые системы безусловно
+                            заинтересованы.
+                        </p>
+                        <p>
+                            Познакомиться с полным описанием словаря можно на
+                            официальном сайте. Существует неофициальный и пока
+                            неполный перевод стандарта на русский язык на сайте.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="microformats">
+                            Microformats
+                        </h1>
+                        <p>
+                            Microformats.org (Микроформаты) — это открытый
+                            стандарт, созданный в 2007 году сообществом
+                            энтузиастов. Это сообщество очень хотело создать
+                            стандарт для семантической разметки сайтов,
+                            используя ранее существующие технологии. Шесть лет
+                            назад это было определенным плюсом стандарта, так
+                            как его было проще внедрять, но сейчас добавлять
+                            разметку микроформатов не проще, а в некоторых
+                            случаях и сложнее других словарей. По сравнению с OG
+                            и Schema.org, его используют все меньше и меньше.
+                        </p>
+                        <p>
+                            На данный момент есть около 10 распространенных
+                            спецификаций микроформатов для нескольких предметных
+                            областей. Какие-то из них завершены, но большая
+                            часть находится на стадии черновиков. Существуют
+                            микроформаты для публикации сведений об
+                            организациях, товарах, отзывах, событиях и многих
+                            других сущностях. Каждая сущность имеет собственные
+                            свойства.
+                        </p>
+                        <p>
+                            Разработка новых микроформатов происходит в открытом
+                            режиме, есть отдельная вики микроформатов. Из-за
+                            того что при создании каждого микроформата
+                            основатели стремятся договориться и найти компромисс
+                            со всеми, процесс длится очень долго, а порой и не
+                            заканчивается. Из-за этого доработанные микроформаты
+                            можно пересчитать на пальцах, а тех, что имеют
+                            статус черновиков довольно много.
+                        </p>
+                        <p>
+                            В настоящее время поисковыми системами
+                            поддерживаются такие микроформаты:
+                        </p>
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>
+                                hCard — формат разметки контактной информации
+                                (адресов, телефонов и т. д.);
+                            </li>
+                            <li>
+                                hRecipe — формат для описания кулинарных
+                                рецептов;
+                            </li>
+                            <li>hReview — формат разметки отзывов;</li>
+                            <li>hProduct — формат разметки товаров.</li>
+                        </ul>
+                        <p>
+                            Их использование дает возможность показывать
+                            специальные сниппеты в выдаче.
+                        </p>
+                        <p>
+                            Один из самых популярных микроформатов — hCard.
+                            Микроформат hCard универсален для описания людей и
+                            организаций, содержит базовую информацию и о том и о
+                            другом.
+                        </p>
+                        <p>
+                            Используя hcard можно указать такие свойства, как:
+                        </p>
+                        <ul class="pf-v5-c-list" role="list">
+                            <li>n — имя;</li>
+                            <li>bday — дата рождения;</li>
+                            <li>geo — географическое расположение;</li>
+                            <li>tz — часовой пояс;</li>
+                            <li>uid — ссылка на идентичную сущность;</li>
+                            <li>photo — изображение;</li>
+                            <li>adr — адрес;</li>
+                            <li>org — название организации.</li>
+                        </ul>
+                        <p>
+                            Это часть утвержденных свойств, есть также множество
+                            тех, которые находятся на стадии обсуждения. Вот как
+                            используется hcard в разметке описания человека:
+                        </p>
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> class="vcard">
+    &lt;<span class="html__fx">img</span> class="photo" src="http://example.com/gagarin.jpg" />
+    &lt;<span class="html__fx">strong</span> class="fn">Юрий Гагарин&lt;<span class="html__fx">/strong</span>>
+    &lt;<span class="html__fx">span</span> class="title">Летчик-космонавт&lt;<span class="html__fx">/span</span>> at &lt;<span class="html__fx">span</span> class="org">Военно-воздушные силы СССР&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">a</span> class="url" href=http://example.com/Гагарин>Страница Ю.Гагарина&lt;<span class="html__fx">/a</span>>
+    &lt;<span class="html__fx">div</span> class="bday"> 
+        &lt;<span class="html__fx">span</span> class="value-title" title="1934-03-09">9 марта 1934&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">/div</span>>
+    &lt;<span class="html__fx">span</span> class="note">Первый человек в космосе&lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+                        <p>
+                            Здесь поисковой системе понятно, что речь идет об
+                            организации либо о человеке по имени Юрий Гагарин —
+                            это летчик-космонавт, работавший в Военно-воздушных
+                            силах СССР. Также известна его дата рождения и есть
+                            заметка «Первый человек в космосе». Свойство url
+                            здесь указывает на домашнюю страницу описываемого
+                            объекта.
+                        </p>
+                        <p>
+                            В 2013 была объявлена новая инициатива —
+                            microformats 2, в которой есть нововведения в
+                            названиях классов и упрощения для использования
+                            свойств.
+                        </p>
+                        <p>
+                            Раньше микроформаты были довольно распространены, но
+                            сегодня, особенно на фоне других быстрорастущих
+                            словарей, они выглядят устаревшими. К тому же
+                            использование микроформатов ограничивает их формат —
+                            это объединенный стандарт синтаксиса и словаря, в
+                            котором нельзя использовать другие словари.
+                        </p>
+                        <div class="pf-v5-c-back-to-top">
+                            <a
+                                class="pf-v5-c-button pf-m-primary"
+                                href="#start"
+                            >
+                                Back to top
+                                <span class="pf-v5-c-button__icon pf-m-end">
+                                    <i
+                                        class="fas fa-angle-up"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+       
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Микроразметка Schema.org: что это и как настроить</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page">
+            <header class="pf-v5-c-masthead">
+                <span class="pf-v5-c-masthead__toggle">
+                    <button
+                        class="pf-v5-c-button pf-m-plain"
+                        type="button"
+                        aria-label="Global navigation"
+                    >
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="pf-v5-c-masthead__main">
+                    <a class="pf-v5-c-masthead__brand" href="#"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span
+                        >Микроразметка Schema.org: что это и как настроить</span
+                    >
+                </div>
+                <div class="icons">
+                    <button
+                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
+                        type="button"
+                        id="overflow-menu-simple-dropdown-toggle"
+                        aria-label="Generic options"
+                        aria-expanded="true"
+                    >
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <span class="pf-v5-c-icon">
+                        <span class="pf-v5-c-icon__content">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        
+                    </span>
+                </div>
+            </header>
+            <div class="pf-v5-c-page__sidebar">
+                <div class="pf-v5-c-page__sidebar-body">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable"
+                            >
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable pf-m-current pf-m-expanded">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <section
+                                        class="pf-v5-c-nav__subnav"
+                                        aria-labelledby="expandable-example1"
+                                    >
+                                        <ul
+                                            class="pf-v5-c-nav__list"
+                                            role="list"
+                                        >
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#start"
+                                                    class="pf-v5-c-nav__link  pf-m-current"
+                                                    >Что такое микроразметка schema.org и зачем она нужна</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#schemaorg"
+                                                    class="pf-v5-c-nav__link"
+                                                    >Устройство Schema.org</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#attributes"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Главные атрибуты schema.org</a
+                                                >
+                                            </li>
+                                            <li class="pf-v5-c-nav__item">
+                                                <a
+                                                    href="#manually"
+                                                    class="pf-v5-c-nav__link"
+                                                    aria-current="page"
+                                                    >Как разместить данные вручную на примере фильма</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                        
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
+            <main class="pf-v5-c-page__main" tabindex="-1">
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Что такое микроразметка schema.org и зачем она нужна
+                        </h1>
+
+                        <p>
+                            Единый стандарт schema.org появился еще в 2011 году
+                            по инициативе трех крупнейших поисковых систем —
+                            Google, Microsoft, Yahoo. Позже новую схему
+                            поддержали и гиганты интернет-поиска, включая
+                            отечественный «Яндекс».
+                        </p>
+
+                        <p>
+                            В 2021 году семантическую разметку Schema.org
+                            используют более 10 миллионов сайтов: как для
+                            разметки веб-страниц, так и сообщений электронной
+                            почты. Многие известные сервисы, такие как Google,
+                            Microsoft, Pinterest, Yandex, используют словари
+                            Schema.org для улучшения пользовательского опыта.
+                        </p>
+
+                        <figure>
+                            <img src="img/20.png" />
+                            <figcaption>
+                                Пример семантической разметки schema.org для
+                                хедера сайта
+                            </figcaption>
+                        </figure>
+
+                        <p>
+                            Schema.org создавалась для улучшения качества
+                            поисковой выдачи. Микроразметка делается тегами,
+                            включающими дополнительные атрибуты. Они дают
+                            возможность вручную указывать метаданные,
+                            подсказывая роботам поисковых систем, что именно
+                            находится на выбранной веб-странице.
+                        </p>
+
+                        <p>
+                            <strong
+                                ><em
+                                    >Если страница имеет корректную
+                                    семантическую разметку, то в результатах
+                                    поиска будет отображаться не стандартный
+                                    сниппет, а расширенный. Он будет включать,
+                                    например, цену товара, адрес магазина или
+                                    артикул товара.</em
+                                ></strong
+                            >
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="schemaorg">
+                            Устройство Schema.org
+                        </h1>
+
+                        <p>
+                            По своей структуре schema.org — это словарь
+                            семантической разметки. Он включает в себя множество
+                            классов, которые используются для того, чтобы
+                            указывать контентное содержимое веб-страницы.
+                            Словарь включает в себя подробное указание свойств
+                            для каждого класса. Синтаксис — второй обязательный
+                            элемент микроразметки. Можно сказать, что словарь —
+                            подобие языка программирования, а синтаксис — метод
+                            его использования. Подробнее про синтаксисы можно
+                            прочитать <a href="syntax__page.html">здесь</a>
+                        </p>
+                        <p>
+                            Кроме Schema.org существуют и другие словари,
+                            например Open Graph, который одно время был самым
+                            популярным в Рунете. Продолжались разработки иных
+                            словарей: Microdata, RDFa, FOAF, DUBLIN CORE.
+                        </p>
+
+                        <p>
+                            К 2021 году образовалась существенная путаница из
+                            нескольких словарей, в которых используется разный
+                            синтаксис.
+                        </p>
+
+                        <p>
+                            Для разметки Schema.org могут применяться несколько
+                            вариантов синтакиса: от микроданных до JSON-LD,
+                            который активно рекомендует Google.
+                        </p>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="attributes">
+                            Главные атрибуты schema.org
+                        </h1>
+
+                        <p>
+                            Семантическая разметка schema.org базируется на трех
+                            главных атрибутах:
+                        </p>
+
+                        <ol class="pf-v5-c-list" role="list">
+                            <li>
+                                itemscope — показывает область действия словаря
+                                микроданных и определяет область данных. При
+                                помощи этого атрибута поисковый робот понимает,
+                                что на странице находится описание определенного
+                                объекта. Атрибут itemscope всегда используется в
+                                связке с атрибутом itemtype.
+                            </li>
+
+                            <li>
+                                itemtype — показывает адрес словаря,
+                                задействованного для создания разметки. В нашем
+                                случае атрибут itemtype будет вести на домен
+                                schema.org.
+                            </li>
+
+                            <li>
+                                itemprop — позволяет добавить определенное
+                                свойство к выбранному элементу. Пара
+                                имя-значение.
+                            </li>
+                        </ol>
+
+                        <h1 class="pf-v5-c-title pf-m-3xl" id="types">
+                            Типы данных
+                        </h1>
+
+                        <p>
+                            Полный список типов доступен на schema.org. Чаще
+                            всего размечаются следующие типы данных:
+                        </p>
+
+                        <ol class="pf-v5-c-list" role="list">
+                            <li>Статьи (Article).</li>
+                            <li>Хлебные крошки (BreadcrumbList).</li>
+                            <li>Товары (Product).</li>
+                            <li>Отзывы (Review).</li>
+                            <li>FAQ (FAQPage).</li>
+                            <li>Организации (Organization)</li>
+                        </ol>
+
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="manually">
+                            Как разместить данные вручную на примере фильма
+                        </h1>
+
+                        <p>
+                            Допустим, у нас есть веб-страница, рассказывающая о
+                            фильме «Оно». На ней, кроме описания кино,
+                            присутствует и ссылка на трейлер. Открываем
+                            schema.org и находим нужный нам тип данных — movie.
+                            Там вы найдете все необходимые атрибуты, относящиеся
+                            к описанию фильма.
+                        </p>
+
+                        <p>
+                            Примерно так может выглядеть код страницы без
+                            семантической разметки:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span>>
+    &lt;<span class="html__fx">h1</span>>Оно&lt;<span class="html__fx">/h1</span>>
+    &lt;<span class="html__fx">span</span>>Режиссер: Энди Мускетти (род. 26 августа 1973 г.)&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span>>Ужасы&lt;<span class="html__fx">/span</span>> 
+    &lt;<span class="html__fx">a</span> href="../movies/ono-teaser.html">Тизер&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <p>
+                            Все корректно. Но нам нужно показать поисковому
+                            роботу, какая именно часть веб-страницы относится к
+                            тизеру фильма “Оно”. Делается это при помощи
+                            атрибута itemscope:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Movie">
+&lt;<span class="html__fx">h1</span>>Оно&lt;<span class="html__fx">/h1</span>>
+&lt;<span class="html__fx">span</span>>Режиссер: Энди Мускетти (род. 26 августа 1973 г.)&lt;<span class="html__fx">/span</span>>
+&lt;<span class="html__fx">span</span>>Ужасы&lt;<span class="html__fx">/span</span>> 
+&lt;<span class="html__fx">a</span> href="../movies/ono-teaser.html">Тизер&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <p>
+                            Благодаря itemtype поисковый робот точно знает, что
+                            страница посвящена именно фильму. В описании тизера
+                            у нас уже есть информация о жанре, названии,
+                            режиссере фильма. Но эти данные не размечены, и
+                            поисковые системы видят их некорректно. Исправить
+                            ситуацию можно, применив атрибуты name, director,
+                            genre и другие:
+                        </p>
+
+                        <div class="pf-v5-c-code-block">
+                            <div class="pf-v5-c-code-block__header">
+                                <div class="pf-v5-c-code-block__actions">
+                                    <div
+                                        class="pf-v5-c-code-block__actions-item"
+                                    >
+                                        <button
+                                            class="pf-v5-c-button pf-m-plain"
+                                            type="button"
+                                            aria-label="Copy to clipboard"
+                                        >
+                                            <i
+                                                class="fas fa-copy"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pf-v5-c-code-block__content">
+                                <pre
+                                    class="pf-v5-c-code-block__pre"
+                                ><code class="pf-v5-c-code-block__code">
+
+&lt;<span class="html__fx">div</span> itemscope itemtype="http://schema.org/Movie">
+    &lt;<span class="html__fx">h1</span> itemprop="name">Оно&lt;<span class="html__fx">/h1</span>>
+    &lt;<span class="html__fx">span</span>>Режиссер:
+    &lt;<span class="html__fx">span</span> itemprop="director">Энди Мускетти&lt;<span class="html__fx">/span</span>>
+    (род. 16 августа 1954 г.)&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">span</span> itemprop="genre">Ужасы&lt;<span class="html__fx">/span</span>>
+    &lt;<span class="html__fx">a</span> href="../movies/ono-teaser.html" itemprop="trailer">Тизер&lt;<span class="html__fx">/a</span>>
+&lt;<span class="html__fx">/div</span>>
+                              </code>
+                          </pre>
+                            </div>
+                        </div>
+
+                        <img src="img/21.png" />
+
+                        <!------------------------button------------------------------->
+                        <div class="pf-v5-c-back-to-top">
+                            <a
+                                class="pf-v5-c-button pf-m-primary"
+                                href="#start"
+                            >
+                                Back to top
+                                <span class="pf-v5-c-button__icon pf-m-end">
+                                    <i
+                                        class="fas fa-angle-up"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
