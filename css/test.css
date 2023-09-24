@@ -28,7 +28,6 @@ img {
 
 label {
     cursor: pointer;
-    border-right: 1px solid #4f5255;
     display: block;
     height: 4rem;
     width: 4rem;
@@ -402,7 +401,6 @@ footer {
 }
 
 .pf-v5-c-page__main {
-    padding: 0 10px !important;
     z-index: 500;
 }
 
@@ -410,7 +408,9 @@ footer {
     max-width: 1200px;
 }
 
-
+.pf-v5-c-page__main-section {
+    padding: 0 10px;
+}
 
 @media (max-width: 1200px) {
     .pf-v5-c-banner {

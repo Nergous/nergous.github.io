@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Плагины для CMS</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page no--sidebar" id="main--page">
+            <header class="pf-v5-c-masthead">
+                <label class="floatLeft" for="navBtn"><span></span></label>
+                <div class="pf-v5-c-masthead__main">
+                    <a
+                        class="pf-v5-c-masthead__brand"
+                        href="https://www.patternfly.org/"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span>Плагины для CMS</span>
+                </div>
+                <div class="icons">
+                    <span class="pf-v5-c-icon__content">
+                        <a href="https://github.com/Nergous" target="_blank">
+                            <i
+                                class="fas fa-ellipsis-v"
+                                aria-hidden="true"
+                            ></i> </a
+                    ></span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="https://www.patternfly.org/" target="_blank">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </a>
+                    </span>
+
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html"><i class="fas fa-home"></i></a>
+                    </span>
+                </div>
+            </header>
+            <input type="checkbox" class="navBtn" id="navBtn" />
+            <div class="pf-v5-c-page__sidebar" id="sidebar">
+                <div class="pf-v5-c-page__sidebar-body non__visible">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-current"
+                            >
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Популярные ошибки
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Плагины для CMS
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <main class="pf-v5-c-page__main" tabindex="-1" id="page__main">
+                <div class="bottom" id="bottom">
+                    <a href="https://github.com/Nergous"
+                        >Durkin Yaroslav 335A. Made with Patternfly</a
+                    >
+                </div>
+                <button class="button-for-bottom" id="bottomBtn"></button>
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content expanded" id="content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Сайт на CMS? Используйте плагины
+                        </h1>
+                        <p>
+                            Рассмотрим самую популярную CMS в Рунете —
+                            Вордпресс. Для Вордпресс есть несколько решений,
+                            которые помогут просто и быстро внедрить
+                            микроразметку. Вот обзор плагинов, подходящих для
+                            этой задачи:
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            <a
+                                href="https://ru.wordpress.org/plugins/all-in-one-schemaorg-rich-snippets/"
+                                target="_blank"
+                                >Schema — All In One Schema Rich Snippets</a
+                            >
+                        </h1>
+
+                        <p>
+                            Бесплатный плагин, размечает данные в формате
+                            микроданных (подойдет при продвижении в Яндексе, так
+                            как вы не можете использовать JSON-LD). Плагин
+                            подойдет для разметки товаров, отзывов, кулинарных
+                            рецептов, событий и еще нескольких часто
+                            используемых видов контента.
+                        </p>
+                        <img src="img/32.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            <a
+                                href="https://ru.wordpress.org/plugins/wp-seo-structured-data-schema/"
+                                target="_blank"
+                                >WP SEO Structured Data Schema.</a
+                            >
+                        </h1>
+                        <p>
+                            Этот плагин также реализует разметку на основе
+                            синтаксиса микроданных. У плагина есть две версии. В
+                            бесплатной можно разметить данные об организации и
+                            локальном бизнесе, товары, услуги, статьи, видео,
+                            отзывы и еще парочку типов контента. В платной
+                            версии — больше возможностей (стоит платная версия
+                            49$).
+                        </p>
+                        <img src="img/33.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            <a
+                                href="https://ru.wordpress.org/plugins/schema/"
+                                target="_blank"
+                                >Schema</a
+                            >
+                        </h1>
+                        <p>
+                            С помощью плагина можно сделать разметку в
+                            синтаксисе JSON-LD. У плагина есть бесплатная и
+                            платная версии (от 99$). Функционал бесплатной
+                            несколько урезан — доступна разметка для статей,
+                            блога, хлебных крошек, хедера и футера сайта, видео
+                            и еще несколько элементов. Для разметки товаров,
+                            услуг и других сущностей Schema.org придется
+                            покупать платную версию.
+                        </p>
+                        <img src="img/34.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            <a
+                                href="https://wordpress.org/plugins/schema-and-structured-data-for-wp/"
+                                target="_blank"
+                                >Schema & Structured Data for WP & AMP</a
+                            >
+                        </h1>
+                        <p>
+                            Продвинутый плагин для разметки Schema.org с помощью
+                            синтаксиса JSON-LD. В плагине можно использовать 33
+                            сущности Schema. Доступен в двух версиях: бесплатная
+                            и Про (от 49$).
+                        </p>
+                        <img src="img/35.jpg" />
+
+                        <h1 class="pf-v5-c-title pf-m-4xl">
+                            Настройка микроразметки в плагине Schema: пошаговая
+                            инструкция
+                        </h1>
+                        <p>
+                            Установите плагин и кликните по разделу Schema,
+                            который появится в боковом меню админпанели.
+                            Перейдите в раздел Settings → General. Выберите тип
+                            сайта и загрузите логотип.
+                        </p>
+                        <img src="img/36.png" />
+                        <p>
+                            Сохраните изменения и перейдите на вторую вкладку —
+                            Knowledge Graph. Здесь вам нужно указать, кого
+                            представляет сайт — выберите Person, если это личный
+                            сайт, или Organization (если продвигаете сайт
+                            компании).
+                        </p>
+                        <img src="img/37.png" />
+                        <p>
+                            Перейдите на вкладку Schemas. Выберите из выпадающих
+                            списков страницы «О себе» и «Контакты». Если хотите
+                            подключить разметку хедера и футера, хлебных крошек
+                            и других элементов страниц сайта — поставьте галочки
+                            напротив соответствующих параметров.
+                        </p>
+                        <img src="img/38.png" />
+                        <p>
+                            Также можно настроить автоматическое удаление
+                            микроразметки, если будет удален плагин Schema. Для
+                            этого перейдите на вкладку Advanced и поставьте
+                            галочку напротив «Delete Data on Uninstall».
+                        </p>
+                        <img src="img/39.png" />
+                        <p>
+                            Сохраните изменения. Проверьте исходный код страниц
+                            сайта — в разделе &lt;head> ... &lt;/head> появится
+                            код микроразметки в формате JSON-LD.
+                        </p>
+                        <p>
+                            Попробуйте проверить разметку в валидаторе Google
+                            (на всякий случай). Плагин работает корректно,
+                            поэтому ошибок не должно быть — смело загружайте код
+                            на сайт.
+                        </p>
+                        <img src="img/40.png" />
+                        <p>
+                            Примерно так же строится работа с другими плагинами
+                            для Вордпресс. Главное преимущество — вам не нужно
+                            разбираться в синтаксисе и прописывать все параметры
+                            вручную.
+                        </p>
+                    </div>
+                    <div class="pf-v5-c-back-to-top" id="backToTop">
+                        <a class="pf-v5-c-button pf-m-primary" href="#start">
+                            Back to top
+                            <span class="pf-v5-c-button__icon pf-m-end">
+                                <i
+                                    class="fas fa-angle-up"
+                                    aria-hidden="true"
+                                ></i>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

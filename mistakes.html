@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/patternfly.css" />
+        <link rel="stylesheet" href="css/patternfly-addons.css" />
+        <link rel="stylesheet" href="css/test.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
+        <title>Популярные ошибки при реализации микроразметки</title>
+    </head>
+    <body>
+        <div class="pf-v5-c-page no--sidebar" id="main--page">
+            <header class="pf-v5-c-masthead">
+                <label class="floatLeft" for="navBtn"><span></span></label>
+                <div class="pf-v5-c-masthead__main">
+                    <a
+                        class="pf-v5-c-masthead__brand"
+                        href="https://www.patternfly.org/"
+                        ><img
+                            class="pf-v5-c-brand"
+                            src="img/pf-logo.svg"
+                            alt="PatternFly logo"
+                    /></a>
+                </div>
+                <div class="pf-v5-c-masthead__content">
+                    <span>Популярные ошибки при реализации микроразметки</span>
+                </div>
+                <div class="icons">
+                    <span class="pf-v5-c-icon__content">
+                        <a href="https://github.com/Nergous" target="_blank">
+                            <i
+                                class="fas fa-ellipsis-v"
+                                aria-hidden="true"
+                            ></i> </a
+                    ></span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="https://www.patternfly.org/" target="_blank">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </a>
+                    </span>
+
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html"><i class="fas fa-home"></i></a>
+                    </span>
+                </div>
+            </header>
+            <input type="checkbox" class="navBtn" id="navBtn" />
+            <div class="pf-v5-c-page__sidebar" id="sidebar">
+                <div class="pf-v5-c-page__sidebar-body non__visible">
+                    <nav class="pf-v5-c-nav" aria-label="Global">
+                        <ul class="pf-v5-c-nav__list" role="list">
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-current"
+                            >
+                                <a href="index.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example1"
+                                        aria-expanded="false"
+                                    >
+                                        Главная
+                                    </button></a
+                                >
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="dict_page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example2"
+                                        aria-expanded="true"
+                                    >
+                                        Словари
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="syntax__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Синтаксис микроразметки
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="opgraph.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Open Graph
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="schemaorg.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Schema.org
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="pf-v5-c-nav__item pf-m-expandable">
+                                <a href="microformats.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Подробнее про Microformats
+                                        <span class="pf-v5-c-nav__toggle">
+                                            <span
+                                                class="pf-v5-c-nav__toggle-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="examples__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Микроразметка Schema.org - список
+                                        примеров
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Видео-галерея
+                                    </button>
+                                </a>
+                            </li>
+                            <li
+                                class="pf-v5-c-nav__item pf-m-expandable pf-m-expanded"
+                            >
+                                <a href="video__page.html">
+                                    <button
+                                        class="pf-v5-c-nav__link"
+                                        id="expandable-example3"
+                                        aria-expanded="false"
+                                    >
+                                        Популярные ошибки
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <main class="pf-v5-c-page__main" tabindex="-1" id="page__main">
+                <div class="bottom" id="bottom">
+                    <a href="https://github.com/Nergous"
+                        >Durkin Yaroslav 335A. Made with Patternfly</a
+                    >
+                </div>
+                <button class="button-for-bottom" id="bottomBtn"></button>
+                <section class="pf-v5-c-page__main-section pf-m-light-100">
+                    <div class="pf-v5-c-content expanded" id="content">
+                        <h1 class="pf-v5-c-title pf-m-4xl" id="start">
+                            Популярные ошибки при реализации
+                        </h1>
+                        <p>
+                            Разберем популярные ошибки, которые многие допускают
+                            при реализации микроразметки на сайте.
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            1. Откровенный спам
+                        </h1>
+                        <p>
+                            Некоторые выводят в микроразметке то, чего на
+                            странице абсолютно точно нет. На такой сайт легко
+                            можно пожаловаться и он лишиться данного типа
+                            расширенных сниппетов (для всего сайта).
+                        </p>
+                        <img src="img/27.jpg" />
+                        <p>
+                            Если перейти на сайт банка в примере, то на странице
+                            нет ни самого рейтинга, ни возможности оставить
+                            оценку. Не надо так.
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            2. Не соответствующая контенту микроразметка
+                        </h1>
+                        <p>
+                            Иногда встречается проблема, когда на сайте указана
+                            информация не соответствующая тому, что указано в
+                            микроразметке.
+                        </p>
+                        <img src="img/28.jpg" />
+                        <p>
+                            Во-первых в данном примере рейтинг на странице не
+                            выводится. Во-вторых непонятно как так вышло, что на
+                            сайте можно оставить только целую оценку, а в
+                            сниппете она дробная и сформирована на основе одной
+                            оценки..
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            3. Копипаст с конкурентов
+                        </h1>
+                        <p>
+                            Не стоит делать бездумный копипаст с успешных
+                            конкурентов. Всегда анализируйте подходит ли
+                            микроразметка под ваш контент и пойдет ли она вам в
+                            плюс, ведь вполне возможно что конкуренты имеют
+                            хорошие позиции не благодаря микроразметке, а
+                            вопреки.
+                        </p>
+                        <img src="img/29.jpg" />
+                        <p>
+                            В данном примере Apple IPhone предлагается купить по
+                            какой-то неоправданно низкой цене. Любой
+                            здравомыслящий человек поймет что новый IPhone за
+                            такие деньги не купишь, это либо старая модель, либо
+                            битая модель, либо ворованная. А рейтинг 5 из 5 на
+                            основе одной оценки пользователя вообще ни о чем не
+                            говорит (разве что о том, что страницу редко
+                            посещают).
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            4. Несовместимые сущности
+                        </h1>
+                        <p>
+                            Не размещайте все подряд сущности на странице, ведь
+                            некоторые из них могут не сочетаться. При этом
+                            поисковая система выберет только один тип
+                            микроразметки для отображения в поиске (а приоритет
+                            им нельзя задать).
+                        </p>
+                        <img src="img/30.jpg" />
+                        <p>
+                            В примере Organization никак не сочетается с
+                            Product, а также c CreditCard. И какую из этих
+                            сущностей выберет поисковая система остается только
+                            гадать.. Хотя чаще всего это бывает Product.
+                        </p>
+                        <h1 class="pf-v5-c-title pf-m-3xl">
+                            5. Упущен этап сканирования
+                        </h1>
+                        <p>
+                            Одна из самых популярных ошибок случается когда мы
+                            забываем про этап сканирования всех страниц, где
+                            разместили микроразметку. В итоге страницы могут
+                            целый год не получать расширенных сниппетов просто
+                            потому что поисковая система не обнаружила
+                            изменения.
+                        </p>
+                        <img src="img/31.jpg" />
+                        <p>
+                            В примере на странице используется несколько типов
+                            микроразметки, позволяющих получить классный
+                            расширенный сниппет. Но, кто-то забыл отправить
+                            страницу на переобход в Google Search Console или
+                            любым другим способом.
+                        </p>
+                        
+                    </div>
+                    <div class="pf-v5-c-back-to-top" id="backToTop">
+                        <a class="pf-v5-c-button pf-m-primary" href="#start">
+                            Back to top
+                            <span class="pf-v5-c-button__icon pf-m-end">
+                                <i
+                                    class="fas fa-angle-up"
+                                    aria-hidden="true"
+                                ></i>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

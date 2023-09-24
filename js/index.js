@@ -55,14 +55,13 @@ burgerButton.addEventListener("click", function() {
         page.classList.remove("no--sidebar");
         sideBar.classList.remove("non__visible");
         /*content.classList.remove("expanded");*/
-        contentPage.style.cssText = 'padding-left: 15px';
+        
         
         
     } else {
         page.classList.add("no--sidebar");
         sideBar.classList.add("non__visible");
         /*content.classList.add("expanded");*/
-        contentPage.style.cssText = 'padding-left: 80px';
         
     }
 });
