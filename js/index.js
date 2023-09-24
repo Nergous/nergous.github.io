@@ -1,5 +1,7 @@
 var acc = document.getElementsByClassName("pf-v5-c-accordion__toggle");
 
+
+
 for (let i = 0; i < acc.length; i += 1) {
     acc[i].addEventListener("click", function () {
         if (this.getAttribute("aria-expanded", "false")) {
@@ -26,7 +28,6 @@ for (let i = 0; i < btn.length; i++) {
         codeBlock =
             this.parentNode.parentNode.parentNode.nextElementSibling
                 .firstElementChild.firstElementChild;
-        console.log(codeBlock);
         codeBlock.setAttribute("id", "myText");
         copyContent();
         codeBlock.removeAttribute("id");
@@ -35,7 +36,6 @@ for (let i = 0; i < btn.length; i++) {
 
 const copyContent = async () => {
     let text = document.getElementById("myText").innerHTML;
-    console.log(text);
     try {
         await navigator.clipboard.writeText(text);
         alert("Copied!");
@@ -45,4 +45,67 @@ const copyContent = async () => {
 };
 
 
+var burgerButton = document.getElementById("navBtn");
+var page = document.getElementById("main--page");
+var sideBar = document.getElementById("sidebar");
+var contentPage = document.getElementById("page__main");
+var content = document.getElementById("content");
+burgerButton.addEventListener("click", function() {
+    if (this.checked) {
+        page.classList.remove("no--sidebar");
+        sideBar.classList.remove("non__visible");
+        /*content.classList.remove("expanded");*/
+        contentPage.style.cssText = 'padding-left: 15px';
+        
+        
+    } else {
+        page.classList.add("no--sidebar");
+        sideBar.classList.add("non__visible");
+        /*content.classList.add("expanded");*/
+        contentPage.style.cssText = 'padding-left: 80px';
+        
+    }
+});
 
+
+var bottom = document.getElementById("bottom");
+var bottomBtn = document.getElementById("bottomBtn");
+bottomBtn.addEventListener("click", function() {
+    if (bottom.classList.contains("raised")) {
+        bottom.classList.remove("raised");
+        bottomBtn.classList.remove("raised");
+    } else {
+        bottom.classList.add("raised");
+        bottomBtn.classList.add("raised");
+    }
+});
+
+
+var nav = document.getElementById("navList");
+try {
+    var navList = nav.getElementsByClassName("pf-v5-c-nav__link");
+    for (let i=0; i < navList.length; i += 1) {
+        navList[i].addEventListener("click", function() {
+            for (let j = 0; j < navList.length; j += 1) {
+                navList[j].classList.remove("pf-m-current");
+            }
+            navList[i].classList.add("pf-m-current");
+        });
+    }
+} catch(err) {
+    console.log(err)
+}
+
+
+
+var windowH = window.innerHeight;
+var backToTop = document.getElementById("backToTop");
+
+contentPage.addEventListener("scroll", function() {
+    if (contentPage.scrollTop > (windowH / 2)) {
+        backToTop.style.display = "block";
+    }
+    else {
+        backToTop.style.display = "none";
+    }
+}, {passive: true});

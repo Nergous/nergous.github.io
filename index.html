@@ -15,11 +15,13 @@
         <title>Использование микроразметки</title>
     </head>
     <body>
-        <div class="pf-v5-c-page">
+        <div class="pf-v5-c-page no--sidebar" id="main--page">
             <header class="pf-v5-c-masthead">
                 <label class="floatLeft" for="navBtn"><span></span></label>
                 <div class="pf-v5-c-masthead__main">
-                    <a class="pf-v5-c-masthead__brand" href="#"
+                    <a
+                        class="pf-v5-c-masthead__brand"
+                        href="https://www.patternfly.org/"
                         ><img
                             class="pf-v5-c-brand"
                             src="img/pf-logo.svg"
@@ -30,30 +32,27 @@
                     <span>Использование микроразметки</span>
                 </div>
                 <div class="icons">
-                    <button
-                        class="pf-v5-c-button pf-v5-c-dropdown__toggle pf-m-plain"
-                        type="button"
-                        id="overflow-menu-simple-dropdown-toggle"
-                        aria-label="Generic options"
-                        aria-expanded="true"
-                    >
-                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                    </button>
-                    <span class="pf-v5-c-icon">
-                        <span class="pf-v5-c-icon__content">
-                            <i class="fas fa-cog" aria-hidden="true"></i>
-                        </span>
-                    </span>
                     <span class="pf-v5-c-icon__content">
-                        <a href="index.html"
-                            ><i class="fas fa-home"></i
-                        ></a>
+                        <a href="https://github.com/Nergous" target="_blank">
+                            <i
+                                class="fas fa-ellipsis-v"
+                                aria-hidden="true"
+                            ></i> </a
+                    ></span>
+                    <span class="pf-v5-c-icon__content">
+                        <a href="https://www.patternfly.org/" target="_blank">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </a>
+                    </span>
+
+                    <span class="pf-v5-c-icon__content">
+                        <a href="index.html"><i class="fas fa-home"></i></a>
                     </span>
                 </div>
             </header>
-            <div class="pf-v5-c-page__sidebar">
-                <div class="pf-v5-c-page__sidebar-body">
-                    <input type="checkbox" class="navBtn" id="navBtn" />
+            <input type="checkbox" class="navBtn" id="navBtn" />
+            <div class="pf-v5-c-page__sidebar" id="sidebar">
+                <div class="pf-v5-c-page__sidebar-body non__visible">
                     <nav class="pf-v5-c-nav" aria-label="Global">
                         <ul class="pf-v5-c-nav__list" role="list">
                             <li
@@ -189,7 +188,6 @@
                                     >
                                         Микроразметка Schema.org - список
                                         примеров
-                                        
                                     </button>
                                 </a>
                             </li>
@@ -203,7 +201,6 @@
                                         aria-expanded="false"
                                     >
                                         Видео-галерея
-                                        
                                     </button>
                                 </a>
                             </li>
@@ -211,10 +208,16 @@
                     </nav>
                 </div>
             </div>
-            <div class="pf-v5-c-banner">Дуркин Ярослав 335А СЛИ</div>
-            <main class="pf-v5-c-page__main" tabindex="-1">
+
+            <main class="pf-v5-c-page__main" tabindex="-1" id="page__main">
+                <div class="bottom" id="bottom">
+                    <a href="https://github.com/Nergous"
+                        >Durkin Yaroslav 335A. Made with Patternfly</a
+                    >
+                </div>
+                <button class="button-for-bottom" id="bottomBtn"></button>
                 <section class="pf-v5-c-page__main-section pf-m-light-100">
-                    <div class="pf-v5-c-content">
+                    <div class="pf-v5-c-content expanded" id="content">
                         <h1 class="pf-v5-c-title pf-m-4xl" id="start">
                             Что такое микроразметка
                         </h1>
@@ -297,7 +300,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="pf-v5-c-back-to-top">
+                    <div class="pf-v5-c-back-to-top" id="backToTop">
                         <a class="pf-v5-c-button pf-m-primary" href="#start">
                             Back to top
                             <span class="pf-v5-c-button__icon pf-m-end">
@@ -311,6 +314,7 @@
                 </section>
             </main>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

@@ -1,6 +1,5 @@
-
 img {
-    display:block;
+    display: block;
     margin: 30px auto;
     width: 600px;
     height: auto;
@@ -13,12 +12,13 @@ img {
 .pf-v5-c-page__sidebar {
     overflow: hidden;
 }
+
 .pf-v5-c-nav__link {
     font-size: 15px;
 }
 
-.pf-v5-c-nav__item > a {
-    font-size: 10px;
+.pf-v5-c-nav__item>a {
+    font-size: 13px;
 }
 
 
@@ -105,7 +105,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul li  {
+nav ul li {
     border-top: 1px solid #4f5255;
     opacity: 0;
     transform: translateX(-100%);
@@ -139,11 +139,47 @@ nav ul li:hover a i {
     overflow: auto;
 }
 
+
 .navBtn {
     display: none;
 }
 
 
+
+.bottom {
+    position: fixed;
+    bottom: -19px;
+    transform: translateY(0px);
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(22, 20, 20);
+
+}
+.bottom a {
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+    z-index: 9999;
+}
+
+.raised {
+    transform: translateY(-19px);
+    z-index: 9999;
+}
+
+
+.button-for-bottom{
+    z-index: 2000;
+    position: fixed;
+    bottom: 5px;
+    right: 180px;
+    width: 25px;
+    height: 25px;
+
+    background-color: rgb(22, 20, 20);
+    border-radius: 20px 20px 0 0;
+
+}
 
 
 
@@ -159,7 +195,11 @@ figure {
 }
 
 .pf-v5-c-accordion__expandable-content-body.non__visible::after {
-    opacity:0;
+    opacity: 0;
+}
+
+.non__visible {
+    opacity: 0;
 }
 
 .pf-m-4xl {
@@ -175,7 +215,9 @@ figure {
 
 .pf-v5-c-back-to-top {
     z-index: 100000;
+    display: none;
 }
+
 
 .pf-v5-c-brand {
     width: 150px;
@@ -187,6 +229,9 @@ figure {
     max-width: 1000px;
 }
 
+.pf-v5-c-page__sidebar-body {
+    opacity: 1;
+}
 
 .pf-v5-c-banner {
     position: fixed;
@@ -199,16 +244,27 @@ figure {
     position: fixed;
     right: 60px;
 }
+
 .fa-ellipsis-v {
     padding-right: 15px;
     width: 20px;
     height: 20px;
+
+    color: white;
 }
+
 .fa-home {
     padding-left: 10px;
     width: 20px;
     height: 20px;
 }
+
+.fa-cog {
+    color: white;
+}
+
+
+
 .fa-cog::before {
     width: 20px;
     height: 20px;
@@ -276,7 +332,7 @@ figure {
     color: white !important;
 }
 
-.pf-v5-c-nav__list { 
+.pf-v5-c-nav__list {
     padding-top: 0px;
 }
 
@@ -312,9 +368,11 @@ figure {
 }
 
 .video {
-    width: 48%; /* Ширина каждого элемента */
+    width: 48%;
+    /* Ширина каждого элемента */
     margin-bottom: 10px;
 }
+
 .video iframe {
     left: 0;
     top: 0;
@@ -328,6 +386,31 @@ figure {
     justify-content: space-between;
 }
 
+footer {
+    width: 100%;
+    background-color: #4f5255;
+}
+
+.no--sidebar {
+    grid-template-areas: "header header"
+        "main main";
+}
+
+
+.pf-v5-c-page {
+    background-color: #fbfafb;
+}
+
+.pf-v5-c-page__main {
+    padding: 0 10px !important;
+    z-index: 500;
+}
+
+.expanded {
+    max-width: 1200px;
+}
+
+
 
 @media (max-width: 1200px) {
     .pf-v5-c-banner {
@@ -338,20 +421,27 @@ figure {
     .icons {
         opacity: 0;
     }
+
     .navBtn:checked~div {
         transform: translateX(0);
     }
-    
-    
+
+    .pf-v5-c-page__sidebar {
+        z-index: 999;
+    }
+
+
 }
 
 @media (max-width: 992px) {
     .pf-v5-c-masthead__content {
         font-size: 18px;
     }
+
     .pf-m-4xl {
         font-size: 25px;
     }
+
     .pf-m-3xl {
         font-size: 22px;
     }
@@ -360,10 +450,12 @@ figure {
         width: 90%;
         margin: 0 auto 30px auto;
     }
+
     .dicts__list {
         flex-direction: column;
         align-items: center;
     }
+
     .list__item {
         width: 40%;
     }
@@ -373,9 +465,11 @@ figure {
     .pf-v5-c-masthead__main {
         max-height: 60px;
     }
+
     .pf-v5-c-back-to-top {
         margin-bottom: 25px;
     }
+
     .list__item {
         width: 50%;
     }
@@ -384,13 +478,17 @@ figure {
 @media (max-width: 576px) {
     .pf-v5-c-masthead__content {
         font-size: 16px;
+        padding-left: 10px;
     }
+
     .pf-m-4xl {
         font-size: 20px;
     }
+
     .pf-m-3xl {
         font-size: 18px;
     }
+
     .list__item {
         width: 80%;
     }
@@ -399,4 +497,5 @@ figure {
         width: 90%;
         margin: 0 auto 30px auto;
     }
+
 }
