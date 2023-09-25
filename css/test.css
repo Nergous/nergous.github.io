@@ -409,7 +409,7 @@ footer {
 }
 
 .pf-v5-c-page__main-section {
-    padding: 0 10px;
+    padding: 20px 20px;
 }
 
 @media (max-width: 1200px) {
