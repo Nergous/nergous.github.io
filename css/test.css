@@ -7,6 +7,9 @@ img {
 
 }
 
+.pf-v5-c-nav__link {
+    text-align: left;
+}
 
 
 .pf-v5-c-page__sidebar {
@@ -493,9 +496,5 @@ footer {
         width: 80%;
     }
 
-    .video {
-        width: 90%;
-        margin: 0 auto 30px auto;
-    }
 
 }
