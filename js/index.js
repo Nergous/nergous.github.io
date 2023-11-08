@@ -37,7 +37,7 @@ for (let i = 0; i < btn.length; i++) {
 const copyContent = async () => {
     let text = document.getElementById("myText").innerHTML;
     try {
-        await navigator.clipboard.writeText(text);
+        navigator.clipboard.writeText(text);
         alert("Copied!");
     } catch (err) {
         alert("Failed to copy text: ", err);
